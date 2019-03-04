@@ -63,7 +63,7 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 | short | -32768 | 32767 |
 |unsigned short|0| 65535 |
 
-3. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
+4. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
 定义二维数组时可以省略第一维的大小，故选A。
 
@@ -71,7 +71,7 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 ```
 
-4. operator priority
+5. operator priority
 
 [Question 1](https://www.nowcoder.com/questionTerminal/58769985d07646368f73e53a10c862f9)
 
@@ -87,7 +87,9 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 ++（后置递增） <---- ++（前置递增） <---- ! <--- + <---- != <--- &（逻辑与） <---- && <---- ? :
 
-5. [printf](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
+6. printf
+
+[Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
 
 ```cpp
 int main() {
@@ -98,3 +100,15 @@ int main() {
 ```
 
 printf将参数自右向左依次压入堆栈，其中a是4个字节，b和c被提升为double类型，是8个字节。随后依次出栈，a打印4个字节，读取到的是98；而b打印4个字节，在小端存储方式下，低地址低位，高地址高位，栈顶至栈底为地址增长的方向，故b读取到的是0；c打印8个字节，后4个字节并不是0，但因太小而被忽略，读取到的也是0，故选B。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/f9c598c5fb684411a393621fd4e63b1d)
+
+```cpp
+main() {
+    char s[] = "123", *p;
+    p = s;
+    printf("%c%c%c\n", *p++, *p++, *p++);
+}
+```
+
+printf自右向左计算表达式，故选B。
