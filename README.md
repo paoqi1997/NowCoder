@@ -1,6 +1,6 @@
 # NowCoder
 
-个人整理的知识笔记及习题技巧（C++后端方向）。
+个人整理的知识笔记及习题技巧（C/C++后端方向）。
 
 ## Computer Basis
 
@@ -17,7 +17,7 @@
 | -127 | 1111 1111 | 1000 0000 | 1000 0001 |
 | -128 | 1000 0000 | 1111 1111 | 1000 0000 |
 
-## C++
+## C/C++
 
 1. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
@@ -36,7 +36,7 @@ a.func();
 
 2. [signed char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
 
-a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，A错；c的补码为1110 0000，故c为224，不等于a，B错；b为0xffffffe0，正确，故选C。
+a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，A错；c的补码为1110 0000，故c为224，c不等于a，B错；b为0xffffffe0，正确，故选C。
 
 |   |MIN|MAX|
 |---|---|---|
