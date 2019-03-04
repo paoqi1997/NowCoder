@@ -121,3 +121,18 @@ main() {
 ```
 
 printf自右向左计算表达式，故选B。
+
+8. [const](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
+
+const对象只能调用const成员函数，故选B。
+
+9. [Multithreading](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
+
+```cpp
+void foo() {
+    ++a;
+    printf("%d", a);
+}
+```
+
+++a并不是原子操作，其步骤可分为3步：从内存读取a到寄存器、+1、将寄存器的值回写到内存。故ABCD均有可能。
