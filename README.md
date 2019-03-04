@@ -34,20 +34,9 @@ char *const p2 = "world";
 
 非常量指针p1指向常量，故A正确，B错误；常量指针p2指向非常量，故D错，应注意到"world"存储在常量区，不可修改，故C错。
 
-2. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
+2. [static](https://www.nowcoder.com/questionTerminal/e3ea7a08df454558bee00fa1c99d73fe)
 
-```cpp
-class A {
-public:
-    A() = default;
-    void func() { delete this; }
-};
-...
-A a;
-a.func();
-```
-
-可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
+func1修改的是静态全局变量，func2修改的是局部变量，func3修改的是静态局部变量，故选B。
 
 3. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
 
@@ -176,11 +165,26 @@ int main() {
 
 11. Class
 
-[Question 1](https://www.nowcoder.com/questionTerminal/9ca9a4991164463b90b6ba0fef227030)
+[Question 1](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
+
+```cpp
+class A {
+public:
+    A() = default;
+    void func() { delete this; }
+};
+...
+A a;
+a.func();
+```
+
+可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/9ca9a4991164463b90b6ba0fef227030)
 
 若类的析构函数是私有的，编译器将不会在栈空间上为类对象分配空间，这意味着不能直接创建对象，故选B。
 
-[Question 2](https://www.nowcoder.com/questionTerminal/2a49c4d64fa6452ca8ccdbae9172c646)
+[Question 3](https://www.nowcoder.com/questionTerminal/2a49c4d64fa6452ca8ccdbae9172c646)
 
 空类所占的字节数为1，故选B。
 
