@@ -164,6 +164,10 @@ void foo() {
 
 若类的析构函数是私有的，编译器将不会在栈空间上为类对象分配空间，这意味着不能直接创建对象，故选B。
 
+[Question 2](https://www.nowcoder.com/questionTerminal/2a49c4d64fa6452ca8ccdbae9172c646)
+
+空类所占的字节数为1，故选B。
+
 12. OOP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
@@ -173,3 +177,7 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 [Question 2](https://www.nowcoder.com/questionTerminal/4d04e379d0ba4c74b627a37d19d62a08)
 
 类的构造顺序是从基类到派生类，在基类的构造函数中调用虚函数时尚未构造派生类，并不会呈现出多态，故A错；类的析构顺序是从派生类到基类，在基类的析构函数中调用虚函数时派生类已被析构掉，也不会呈现出多态，故B错，选CD。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/2b9efbd31b4c4f35b086ac9c21fe21f5)
+
+含有纯虚函数的类被称为抽象类，不能被实例化，故A对；基类被虚继承才是虚基类，故B错；C不完整，忽略；纯虚函数也可以有函数体，但必须在类的外部定义，故D错，选A。
