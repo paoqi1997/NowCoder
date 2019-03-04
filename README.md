@@ -94,11 +94,11 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 
 7. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
-定义二维数组时可以省略第一维的大小，故选A。
-
 ```cpp
 int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 ```
+
+定义二维数组时可以省略第一维的大小，故选A。
 
 8. function
 
@@ -108,7 +108,7 @@ func自右向左将参数压入堆栈，故v1为2，v2为0，选D。
 
 [Question 2](https://www.nowcoder.com/questionTerminal/5ecb2abb0a1f4a4b8ad7a1d4abe2d80d)
 
-形参只有所在的函数被调用时才分配存储单元，故选A。
+形参只有函数被调用时才分配存储单元，故选A。
 
 9. printf
 
