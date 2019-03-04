@@ -160,7 +160,7 @@ void foo() {
 
 11. Class
 
-[Question 1](https://www.nowcoder.com/questionTerminal/9ca9a4991164463b90b6ba0fef227030?toCommentId=2376869)
+[Question 1](https://www.nowcoder.com/questionTerminal/9ca9a4991164463b90b6ba0fef227030)
 
 若类的析构函数是私有的，编译器将不会在栈空间上为类对象分配空间，这意味着不能直接创建对象，故选B。
 
