@@ -89,7 +89,12 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 6. [operator overload](https://www.nowcoder.com/questionTerminal/7609a03a292a472ba69008e92785fcbc)
 
-本题选ABC，不能被重载的运算符如下：::、.*、.、? :
+本题选ABC，不能被重载的运算符如下：
+
++ ::
++ .*
++ .
++ ? :
 
 7. printf
 
