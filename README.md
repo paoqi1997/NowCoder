@@ -19,7 +19,7 @@
 
 ## C++
 
-1. delete this
+1. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
 可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
 
@@ -32,4 +32,14 @@ public:
 ...
 A a;
 a.func();
+```
+
+2. [signed char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
+
+a为符号类型，范围为-128 ~ 127，0xe0的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，A错；c为无符号类型，范围为0 ~ 255，故c为224，不等于a，B错；b为0xffffffe0，正确，故选C。
+
+```
+signed char a = 0xe0;
+unsigned int b = a;
+unsigned char c = a;
 ```
