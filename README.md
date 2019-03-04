@@ -19,7 +19,11 @@
 
 ## C/C++
 
-1. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
+1. [const](https://www.nowcoder.com/questionTerminal/557b67decf6540a8ba85ef1f02406bfd)
+
+const对象只能调用const成员函数，故选B。
+
+2. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
 ```cpp
 class A {
@@ -34,7 +38,7 @@ a.func();
 
 可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
 
-2. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
+3. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
 
 ```cpp
 signed char a = 0xe0;
@@ -49,7 +53,7 @@ a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，
 | char | -128 | 127 |
 |unsigned char|0|255|
 
-3. [short](https://www.nowcoder.com/questionTerminal/b7dd8b9cf69e4554912a45bdae9a8bda)
+4. [short](https://www.nowcoder.com/questionTerminal/b7dd8b9cf69e4554912a45bdae9a8bda)
 
 ```cpp
 short si = -32767;
@@ -62,14 +66,6 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 |---|---|---|
 | short | -32768 | 32767 |
 |unsigned short|0| 65535 |
-
-4. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
-
-定义二维数组时可以省略第一维的大小，故选A。
-
-```cpp
-int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
-```
 
 5. operator priority
 
@@ -96,7 +92,25 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 + .
 + ? :
 
-7. printf
+7. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
+
+定义二维数组时可以省略第一维的大小，故选A。
+
+```cpp
+int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
+```
+
+8. function
+
+[Question 1](https://www.nowcoder.com/questionTerminal/9fd169364f4a42599aa7ade7f1c9bbd9)
+
+func自右向左将参数压入堆栈，故v1为2，v2为0，选D。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/5ecb2abb0a1f4a4b8ad7a1d4abe2d80d)
+
+形参只有所在的函数被调用时才分配存储单元，故选A。
+
+9. printf
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
 
@@ -122,11 +136,7 @@ main() {
 
 printf自右向左计算表达式，故选B。
 
-8. [const](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
-
-const对象只能调用const成员函数，故选B。
-
-9. [Multithreading](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
+10. [Multithreading](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
 
 ```cpp
 void foo() {
@@ -135,4 +145,4 @@ void foo() {
 }
 ```
 
-++a并不是原子操作，其步骤可分为3步：从内存读取a到寄存器、+1、将寄存器的值回写到内存。故ABCD均有可能。
+++a并不是原子操作，其步骤可分为3步：从内存读取a的值到寄存器、+1、将a的值从寄存器回写到内存。故ABCD均有可能。
