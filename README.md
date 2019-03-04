@@ -157,3 +157,9 @@ void foo() {
 ```
 
 ++a并不是原子操作，其步骤可分为3步：从内存读取a的值到寄存器、+1、将a的值从寄存器回写到内存。故ABCD均有可能。
+
+11. OOP
+
+[Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
+
+func的参数不是指针，不存在虚函数的动态绑定，故直接调用B0::display，选A。
