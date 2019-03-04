@@ -163,3 +163,7 @@ void foo() {
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
 
 func的参数不是指针，不存在虚函数的动态绑定，故直接调用B0::display，选A。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/4d04e379d0ba4c74b627a37d19d62a08)
+
+类的构造顺序是从基类到派生类，在基类的构造函数中调用虚函数时尚未构造派生类，并不会呈现出多态，故A错；类的析构顺序是从派生类到基类，在基类的析构函数中调用虚函数时派生类已被析构掉，也不会呈现出多态，故B错，选CD。
