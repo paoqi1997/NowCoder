@@ -19,9 +19,20 @@
 
 ## C/C++
 
-1. [const](https://www.nowcoder.com/questionTerminal/557b67decf6540a8ba85ef1f02406bfd)
+1. const
+
+[Question 1](https://www.nowcoder.com/questionTerminal/557b67decf6540a8ba85ef1f02406bfd)
 
 const对象只能调用const成员函数，故选B。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/16d6bf307eeb4984b91ad4876e3c40b8)
+
+```cpp
+const char *p1 = "hello";
+char *const p2 = "world";
+```
+
+非常量指针p1指向常量，故A正确，B错误；常量指针p2指向非常量，故D错，应注意到"world"存储在常量区，不可修改，故C错。
 
 2. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
