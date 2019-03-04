@@ -57,8 +57,14 @@ unsigned char c = a;
 int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 ```
 
-4. [operator priority](https://www.nowcoder.com/questionTerminal/58769985d07646368f73e53a10c862f9)
+4. operator priority
+
+[Question 1](https://www.nowcoder.com/questionTerminal/58769985d07646368f73e53a10c862f9)
 
 选D。
 
-! <--- != <--- && <---- ? :
+[Question 2](https://www.nowcoder.com/questionTerminal/3567b8a580b74315bd2a463c7d686d6d)
+
+选B。
+
+! <--- + <---- != <--- &（逻辑与） <---- && <---- ? :
