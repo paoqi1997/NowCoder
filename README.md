@@ -158,7 +158,13 @@ void foo() {
 
 ++a并不是原子操作，其步骤可分为3步：从内存读取a的值到寄存器、+1、将a的值从寄存器回写到内存。故ABCD均有可能。
 
-11. OOP
+11. Class
+
+[Question 1](https://www.nowcoder.com/questionTerminal/9ca9a4991164463b90b6ba0fef227030?toCommentId=2376869)
+
+若类的析构函数是私有的，编译器将不会在栈空间上为类对象分配空间，这意味着不能直接创建对象，故选B。
+
+12. OOP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
 
