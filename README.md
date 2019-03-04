@@ -147,7 +147,9 @@ main() {
 
 printf自右向左计算表达式，故选B。
 
-10. [Multithreading](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
+10. Process/Thread
+
+[Question 1](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
 
 ```cpp
 void foo() {
@@ -157,6 +159,20 @@ void foo() {
 ```
 
 ++a并不是原子操作，其步骤可分为3步：从内存读取a的值到寄存器、+1、将a的值从寄存器回写到内存。故ABCD均有可能。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/1f6cc9c0ef354f86b1727c6c030a1a19)
+
+```cpp
+int main() {
+    for (int i = 0; i < 2; ++i) {
+        fork();
+        printf("-");
+    }
+    return 0;
+}
+```
+
+如果是printf("-")，子进程会继承父进程的缓冲区，父进程和3个fork子进程各输出2个'-'，共8个；如果是printf("-\n")，缓冲区会被刷新，父进程和第一个fork子进程输出2个'-'，后两个fork子进程输出1个'-'，共6个，故选D。
 
 11. Class
 
