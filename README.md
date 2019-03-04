@@ -21,8 +21,6 @@
 
 1. [delete this](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
-可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
-
 ```cpp
 class A {
 public:
@@ -34,7 +32,15 @@ A a;
 a.func();
 ```
 
+可以在类的成员函数中delete this，delete之后也可调用该对象的其他方法，但前提是不涉及this指针的内容。
+
 2. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
+
+```cpp
+signed char a = 0xe0;
+unsigned int b = a;
+unsigned char c = a;
+```
 
 a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，A错；c的补码为1110 0000，故c为224，c不等于a，B错；b为0xffffffe0，正确，故选C。
 
@@ -43,11 +49,19 @@ a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，
 | char | -128 | 127 |
 |unsigned char|0|255|
 
+3. [short](https://www.nowcoder.com/questionTerminal/b7dd8b9cf69e4554912a45bdae9a8bda)
+
 ```cpp
-signed char a = 0xe0;
-unsigned int b = a;
-unsigned char c = a;
+short si = -32767;
+unsigned short usi = si;
 ```
+
+si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000 0000 0000 0001，usi的补码也为1000 0000 0000 0001，1从符号位转换为数值位，故选D。
+
+|   |MIN|MAX|
+|---|---|---|
+| short | -32768 | 32767 |
+|unsigned short|0| 65535 |
 
 3. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
