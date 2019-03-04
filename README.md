@@ -85,9 +85,13 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 选C。
 
-++（后置递增） <---- ++（前置递增） <---- ! <--- + <---- != <--- &（逻辑与） <---- && <---- ? :
+++（后置递增） <---- ++（前置递增） <---- ! <---- &（取地址） <--- + <---- != <--- &（逻辑与） <---- && <---- ? :
 
-6. printf
+6. [operator overload](https://www.nowcoder.com/questionTerminal/7609a03a292a472ba69008e92785fcbc)
+
+本题选ABC，不能被重载的运算符如下：::、.*、.、? :
+
+7. printf
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
 
