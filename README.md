@@ -34,7 +34,7 @@ A a;
 a.func();
 ```
 
-2. [signed char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
+2. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
 
 a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，A错；c的补码为1110 0000，故c为224，c不等于a，B错；b为0xffffffe0，正确，故选C。
 
@@ -43,8 +43,22 @@ a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，
 | char | -128 | 127 |
 |unsigned char|0|255|
 
-```
+```cpp
 signed char a = 0xe0;
 unsigned int b = a;
 unsigned char c = a;
 ```
+
+3. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
+
+定义二维数组时可以省略第一维的大小，故选A。
+
+```cpp
+int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
+```
+
+4. [operator priority](https://www.nowcoder.com/questionTerminal/58769985d07646368f73e53a10c862f9)
+
+选D。
+
+! <--- != <--- && <---- ? :
