@@ -105,7 +105,9 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 
 ++（后置递增） <---- ++（前置递增） <---- ! <---- &（取地址） <--- + <---- != <--- &（逻辑与） <---- && <---- || <---- ? :
 
-6. [operator overload](https://www.nowcoder.com/questionTerminal/7609a03a292a472ba69008e92785fcbc)
+6. operator overload
+
+[Question 1](https://www.nowcoder.com/questionTerminal/7609a03a292a472ba69008e92785fcbc)
 
 本题选ABC，不能被重载的运算符如下：
 
@@ -113,6 +115,10 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 + .*
 + .
 + ? :
+
+[Question 2](https://www.nowcoder.com/questionTerminal/569d8c14cc2f4d4dbee54f3652335477)
+
+能作为函数重载的依据是：const、参数类型和参数个数，故选ABC。
 
 7. [Array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
