@@ -163,6 +163,24 @@ int main() {
 
 如果是printf("-")，子进程会继承父进程的缓冲区，父进程和3个fork子进程各输出2个'-'，共8个；如果是printf("-\n")，缓冲区会被刷新，父进程和第一个fork子进程输出2个'-'，后两个fork子进程输出1个'-'，共6个，故选D。
 
+[Question 3](https://www.nowcoder.com/questionTerminal/0d5acd7276324a6981d696fbe88f817e)
+
+```cpp
+int main() {
+    int pid;
+    int num = 1;
+    pid = fork();
+    if (pid > 0) {
+        ++num;
+        printf("in parent: num:%d addr:%x\n", num, &num);
+    } else if (pid == 0) {
+        printf("in child: num:%d addr:%x\n", num, &num);
+    }
+}
+```
+
+子进程对父进程的数据进行读操作时，是与父进程共享地址空间的，若进行写操作，将发生虚拟地址的拷贝，但物理地址还是一样的，故在父子进程中，num的值不同，num的地址相同，故选B。
+
 11. Class
 
 [Question 1](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
