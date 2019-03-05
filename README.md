@@ -21,6 +21,24 @@
 
 a + b = 0x 7FFF FFFF FFFF FFFF + 0x 8000 0000 0000 0000 = 0x FFFF FFFF FFFF FFFF，负数在计算机中的存储形式为补码，故先-1再取反得到原码，最终为-1，故选B。
 
+2. 字节对齐
+
+[Question 1](https://www.nowcoder.com/questionTerminal/17e34bb0d97b4ef99f4b69458194c662)
+
+```cpp
+struct stu
+{
+    union {
+        char bj[5];
+        int bh[2];
+    } class;
+    char xm[8];
+    float cj;
+} xc;
+```
+
+struct/union的对齐标准就是按占用字节数最大的成员的字节数的整数倍对齐，故sizeof(xc) = (((5 + 1) + 8) + 2) + 4 = 20，选D。
+
 ## C/C++
 
 1. const
