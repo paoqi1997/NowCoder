@@ -253,3 +253,7 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 [Question 1](https://www.nowcoder.com/questionTerminal/553f59e30d9f4d949bc39ad6761026b8)
 
 条件n = 0为假，返回0，故循环一次也不进行，选A。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/8685c71cf8dd49c2a239f978fd387232)
+
+在switch...case表达式中，case后随的表达式必须是整型常量，且default总是最后再执行，故CD错，选AB。
