@@ -43,7 +43,7 @@ struct/union的对齐标准就是按占用字节数最大的成员的字节数�
 
 [Question 1](https://www.nowcoder.com/questionTerminal/cd143d9138cc434eae3e395ace08b0b4)
 
-一个汉字在UTF-8编码下占用3个字节，在UTF-16编码下占用2个字节，如果保存为文本文件，还需要加上标识，其中EF BB BF表示UTF-8，占用3个字节，FE FF表示UTF-16，占用2个字节，故选BD。
+一个汉字在UTF-8编码下占用3个字节，在UTF-16编码下占用2个字节，如果保存为文本文件，还需要加上标识，其中EF BB BF表示使用UTF-8编码，FE FF表示使用UTF-16编码，占用2个字节，故选BD。
 
 ## C/C++
 
