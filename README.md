@@ -62,6 +62,10 @@ char *const p2 = "world";
 
 非常量指针p1指向常量，故A正确，B错误；常量指针p2指向非常量，故D错，应注意到"world"存储在常量区，不可修改，故C错。
 
+[Question 3](https://www.nowcoder.com/questionTerminal/949330b7213b45afbadc980591774085)
+
+指针常量表示指针本身是一个常量，常量指针表示指针指向一个常量。
+
 2. [static](https://www.nowcoder.com/questionTerminal/e3ea7a08df454558bee00fa1c99d73fe)
 
 func1修改的是静态全局变量，func2修改的是局部变量，func3修改的是静态局部变量，故选B。
@@ -240,6 +244,10 @@ a.func();
 
 空类所占的字节数为1，故选B。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/efeff39629c148828732a04641160fde)
+
+类模板是类的模板，模板类是类模板实例化后的类。
+
 12. OOP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
@@ -267,3 +275,17 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 [Question 2](https://www.nowcoder.com/questionTerminal/8685c71cf8dd49c2a239f978fd387232)
 
 在switch...case表达式中，case后随的表达式必须是整型常量，且default总是最后再执行，故CD错，选AB。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/32e1804df44d48b699e4b7b7e9d97cf7)
+
+```cpp
+#ifdef __cplusplus
+extern "C" {
+#endif
+// function declaration
+#ifdef __cplusplus
+}
+#endif
+```
+
+extern "C"是为了解决C++代码调用C代码的问题。
