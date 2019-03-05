@@ -92,7 +92,7 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 + .
 + ? :
 
-7. [array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
+7. [Array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
 ```cpp
 int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
@@ -100,7 +100,7 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 定义二维数组时可以省略第一维的大小，故选A。
 
-8. function
+8. Function
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fd169364f4a42599aa7ade7f1c9bbd9)
 
@@ -219,3 +219,9 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 [Question 3](https://www.nowcoder.com/questionTerminal/2b9efbd31b4c4f35b086ac9c21fe21f5)
 
 含有纯虚函数的类被称为抽象类，不能被实例化，故A对；基类被虚继承才是虚基类，故B错；C不完整，忽略；纯虚函数也可以有函数体，但必须在类的外部定义，故D错，选A。
+
+13. Details
+
+[Question 1](https://www.nowcoder.com/questionTerminal/553f59e30d9f4d949bc39ad6761026b8)
+
+条件n = 0为假，返回0，故循环一次也不进行，选A。
