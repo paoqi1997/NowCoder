@@ -17,6 +17,10 @@
 | -127 | 1111 1111 | 1000 0000 | 1000 0001 |
 | -128 | 1000 0000 | 1111 1111 | 1000 0000 |
 
+[Question 1](https://www.nowcoder.com/questionTerminal/92620388e2754b72950ca939d6493300)
+
+a + b = 0x 7FFF FFFF FFFF FFFF + 0x 8000 0000 0000 0000 = 0x FFFF FFFF FFFF FFFF，负数在计算机中的存储形式为补码，故先-1再取反得到原码，最终为-1，故选B。
+
 ## C/C++
 
 1. const
