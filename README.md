@@ -248,7 +248,11 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 
 含有纯虚函数的类被称为抽象类，不能被实例化，故A对；基类被虚继承才是虚基类，故B错；C不完整，忽略；纯虚函数也可以有函数体，但必须在类的外部定义，故D错，选A。
 
-13. Details
+13. [inline](https://www.nowcoder.com/questionTerminal/b592a5037f254806b42278154214bc50)
+
+内联函数不能包含复杂的语句，如switch和while等，故C的说法错误，选C。
+
+14. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/553f59e30d9f4d949bc39ad6761026b8)
 
