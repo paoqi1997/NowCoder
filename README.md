@@ -312,3 +312,18 @@ extern "C" {
 ```
 
 extern "C"是为了解决C++代码调用C代码的问题。
+
+[Question 4](https://www.nowcoder.com/questionTerminal/2f17b0526a6d4c5ea8e8e092da70e1cd)
+
+```cpp
+void main() {
+    int a = -32769;
+    printf("%8U\n", a);
+}
+```
+
++32769 -> 0 1000 0000 0000 0001
+-32769 -> 1 0111 1111 1111 1111
++32767 -> 0 0111 1111 1111 1111
+
+若控制字符不符合格式，printf将原样输出，若为"%8u"，printf将输出32767，故选B。
