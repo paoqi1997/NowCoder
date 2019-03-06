@@ -66,6 +66,10 @@ char *const p2 = "world";
 
 指针常量表示指针本身是一个常量，常量指针表示指针指向一个常量。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/fa504edf41554be39b616ab5315aa617)
+
+非常量引用必须为左值，故A错误，选A。
+
 2. [static](https://www.nowcoder.com/questionTerminal/e3ea7a08df454558bee00fa1c99d73fe)
 
 func1修改的是静态全局变量，func2修改的是局部变量，func3修改的是静态局部变量，故选B。
