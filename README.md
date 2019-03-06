@@ -148,6 +148,17 @@ func自右向左将参数压入堆栈，故v1为2，v2为0，选D。
 
 形参只有函数被调用时才分配存储单元，故选A。
 
+[Question 3](https://www.nowcoder.com/questionTerminal/17d4c9b1a03e4650be5e29af3f2e1f7c)
+
+```cpp
+template <class T>
+T fun(T x, T y) {
+    return x * x + y * y;
+}
+```
+
+模板函数要求参数类型匹配，否则需要显式指定参数类型，进行类型转换，故B错，选B。
+
 9. printf
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
