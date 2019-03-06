@@ -163,6 +163,14 @@ T fun(T x, T y) {
 
 模板函数要求参数类型匹配，否则需要显式指定参数类型，进行类型转换，故B错，选B。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/0dc754158944469b959135ea3e1fdeb0)
+
+```cpp
+void CSomething a();
+```
+
+应注意这里声明了一个名为a的函数，没有创建对象，故选E。
+
 9. printf
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
