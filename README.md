@@ -301,6 +301,10 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 
 含有纯虚函数的类被称为抽象类，不能被实例化，故A对；基类被虚继承才是虚基类，故B错；C不完整，忽略；纯虚函数也可以有函数体，但必须在类的外部定义，故D错，选A。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/05ac9639c3df4c3aaba673c053efb50b)
+
+struct的默认继承方式为public继承，class的默认继承方式为private继承。
+
 13. [inline](https://www.nowcoder.com/questionTerminal/b592a5037f254806b42278154214bc50)
 
 内联函数不能包含复杂的语句，如switch和while等，故C的说法错误，选C。
