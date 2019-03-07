@@ -355,3 +355,25 @@ void main() {
 |+32767|0|0111 1111 1111 1111|
 
 若控制字符不符合格式，printf将原样输出，若为"%8u"，printf将输出32767，故选B。
+
+## Computer Network
+
+1. Protocol
+
+[Question 1](https://www.nowcoder.com/questionTerminal/bfac7c49f8cb404fbc1e66fe583c7f92)
+
+中继器处于物理层。
+
+2. HTTP
+
+[Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
+
+HTTP状态码302表示临时重定向，故浏览器共发起2次HTTP请求。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/ce9fd3b69f8d4c09a40fc298d9fb65f5)
+
+HTTP/2支持以下新特性：
+
++ 头部压缩（Header Compressing）
++ 多路复用（Multiplexing）
++ 服务端推送（Server Push）
