@@ -364,6 +364,10 @@ void main() {
 
 中继器处于物理层。
 
+[Question 2](https://www.nowcoder.com/questionTerminal/4af96389f35f4564804c6b7a6ebc0e86)
+
+在不同自治系统AS之间的路由选择不能使用内部网关协议如RIP或OSPF，只能使用边界网关协议BGP，故B的说法错误，选B。
+
 2. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
