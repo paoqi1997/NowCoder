@@ -166,7 +166,7 @@ T fun(T x, T y) {
 [Question 4](https://www.nowcoder.com/questionTerminal/0dc754158944469b959135ea3e1fdeb0)
 
 ```cpp
-void CSomething a();
+CSomething a();
 ```
 
 应注意这里声明了一个名为a的函数，没有创建对象，故选E。
