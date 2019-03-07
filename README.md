@@ -374,6 +374,6 @@ HTTP状态码302表示临时重定向，故浏览器共发起2次HTTP请求。
 
 HTTP/2支持以下新特性：
 
-+ 头部压缩（Header Compressing）
++ 头部压缩（Header Compression）
 + 多路复用（Multiplexing）
 + 服务端推送（Server Push）
