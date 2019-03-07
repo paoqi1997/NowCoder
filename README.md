@@ -378,11 +378,23 @@ FTP的数据端口是20，控制端口是21。
 
 当通往目的主机的其他路由不存在时，主机通过默认路由将数据传输到本地网络之外的主机。
 
+[Question 2](https://www.nowcoder.com/questionTerminal/0a31c5d35cea4ac8834c9aa9cfdd7c8a)
+
+A类网络的默认子网掩码为255.0.0.0，B类为255.255.0.0，C类为255.255.255.0。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/fd3fb9401149463b9732a15911cb7085)
+
+B类地址190.168.0.0在子网掩码255.255.224.0下可以划分8个子网。
+
 3. TCP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/0becf1efabdb4f6585ef9c7bc02f5bef)
 
 TCP的确认号是期望收到对方下一个报文段的第一个数据字节的序号，如主机B正确收到了A发送过来的一个报文段，其序号字段值是38，数据长度是40字节，则B期望收到A的下一个数据序号是78，即确认号是78。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/f9c633e61a70412abc308b6bbf0dc08b)
+
+TIME_WAIT出现在主动关闭的一方，CLOSE_WAIT出现在被动关闭的一方，故A的说法错误，选A。
 
 4. HTTP
 
@@ -397,3 +409,7 @@ HTTP/2支持以下新特性：
 + 头部压缩（Header Compression）
 + 多路复用（Multiplexing）
 + 服务端推送（Server Push）
+
+[Question 3](https://www.nowcoder.com/questionTerminal/1a499276f5e74da08e54eb9e125a42f3)
+
+cache-control是HTTP/1.1才有的。
