@@ -368,13 +368,19 @@ void main() {
 
 在不同自治系统AS之间的路由选择不能使用内部网关协议如RIP或OSPF，只能使用边界网关协议BGP，故B的说法错误，选B。
 
-2. TCP
+2. Details
+
+[Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
+
+当通往目的主机的其他路由不存在时，主机通过默认路由将数据传输到本地网络之外的主机。
+
+3. TCP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/0becf1efabdb4f6585ef9c7bc02f5bef)
 
 TCP的确认号是期望收到对方下一个报文段的第一个数据字节的序号，如主机B正确收到了A发送过来的一个报文段，其序号字段值是38，数据长度是40字节，则B期望收到A的下一个数据序号是78，即确认号是78。
 
-3. HTTP
+4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
 
