@@ -171,7 +171,7 @@ CSomething a();
 
 应注意这里声明了一个名为a的函数，没有创建对象，故选E。
 
-9. printf
+9. Libraries
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
 
@@ -196,6 +196,10 @@ main() {
 ```
 
 printf自右向左计算表达式，故选B。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/33ab3cecf0fb4504998d0dd314de0628)
+
+对于fopen函数，r+模式允许读写，在文件不存在时会报错；w+模式也允许读写，在文件不存在时会创建文件。
 
 10. Process/Thread
 
