@@ -368,6 +368,10 @@ void main() {
 
 在不同自治系统AS之间的路由选择不能使用内部网关协议如RIP或OSPF，只能使用边界网关协议BGP，故B的说法错误，选B。
 
+[Question 3](https://www.nowcoder.com/questionTerminal/da1a839bed4049d3b5f52d6cf5473b2c)
+
+FTP的数据端口是20，控制端口是21。
+
 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
