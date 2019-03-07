@@ -242,6 +242,18 @@ int main() {
 
 子进程对父进程的数据进行读操作时，是与父进程共享地址空间的，若进行写操作，将发生虚拟地址的拷贝，但物理地址还是一样的，故在父子进程中，num的值不同，num的地址相同，故选B。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/fa5ae81202804fecad9d3b5dc09c3424)
+
+```cpp
+int main() {
+    printf("Hello");
+    fork();
+    printf("Hello");
+}
+```
+
+缓冲区未刷新，故父子进程各输出2次，总共输出4次，选C。
+
 11. Class
 
 [Question 1](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
