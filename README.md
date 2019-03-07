@@ -283,6 +283,10 @@ a.func();
 
 类模板是类的模板，模板类是类模板实例化后的类。
 
+[Question 5](https://www.nowcoder.com/questionTerminal/da5c9884bc824b72a345c8fdfb53b79b)
+
+const成员、引用成员和带有引用成员的类成员需要类内初始化，故选A。
+
 12. OOP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
