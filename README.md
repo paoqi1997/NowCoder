@@ -372,6 +372,10 @@ void main() {
 
 FTP的数据端口是20，控制端口是21。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/c52beaf1c64e4c5f9e9398111a826336)
+
+RIP协议要求网络中的每一个路由器都要维护从它自己到其他每一个目的网络的距离记录，这里的距离也称为跳数，故选A。
+
 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
@@ -395,6 +399,10 @@ TCP的确认号是期望收到对方下一个报文段的第一个数据字节�
 [Question 2](https://www.nowcoder.com/questionTerminal/f9c633e61a70412abc308b6bbf0dc08b)
 
 TIME_WAIT出现在主动关闭的一方，CLOSE_WAIT出现在被动关闭的一方，故A的说法错误，选A。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/6962b10958c1413a80972995a4e08d6b)
+
+accept发生在三次握手后。
 
 4. HTTP
 
