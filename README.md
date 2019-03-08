@@ -404,6 +404,10 @@ TIME_WAIT出现在主动关闭的一方，CLOSE_WAIT出现在被动关闭的一�
 
 accept发生在三次握手后。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/b930c3f10bbb407ca2c8c19496e9c656)
+
+以下是一个典型TCP客户端会经历的状态序列：SYN_SENT -> ESTABLISHED -> FIN_WAIT_1 -> FIN_WAIT_2 -> TIME_WAIT
+
 4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
