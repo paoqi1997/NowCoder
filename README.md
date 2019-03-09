@@ -376,6 +376,10 @@ FTP的数据端口是20，控制端口是21。
 
 RIP协议要求网络中的每一个路由器都要维护从它自己到其他每一个目的网络的距离记录，这里的距离也称为跳数，故选A。
 
+[Question 5](https://www.nowcoder.com/questionTerminal/13e71af093014130a945c60b87b02986)
+
+IPv4首部的前一部分的长度是固定的，共20字节，后一部分是可选字段，长度可变；IPv6首部的长度是固定的，共40字节。
+
 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
