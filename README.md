@@ -390,6 +390,14 @@ A类地址的默认子网掩码为255.0.0.0，B类为255.255.0.0，C类为255.25
 
 B类地址190.168.0.0在子网掩码255.255.224.0下可以划分8个子网，故选A。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/3145b393b3984c939cf06660f1e5541c)
+
+10.1.0.1/17的广播地址是10.1.127.255。
+
+[Question 5](https://www.nowcoder.com/questionTerminal/3b182e976d424253bc1c33d46e7cab93)
+
+子网掩码最长为30位，即255.255.255.252。
+
 3. TCP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/0becf1efabdb4f6585ef9c7bc02f5bef)
