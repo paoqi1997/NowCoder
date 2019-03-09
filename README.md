@@ -420,6 +420,18 @@ accept发生在三次握手后。
 
 以下是一个典型TCP客户端会经历的状态序列：SYN_SENT -> ESTABLISHED -> FIN_WAIT_1 -> FIN_WAIT_2 -> TIME_WAIT
 
+[Question 5](https://www.nowcoder.com/questionTerminal/cee6014573f841e2b1b19fbd89ab5d32)
+
+在基于窗口的拥塞控制中，发送方让自己的发送窗口等于拥塞窗口。
+
+由题，拥塞窗口cwnd的变化过程如下：1 -> 2 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> (11) -> (12)
+
+超时后调整门限值ssthresh = cwnd / 2 = 4，同时设置拥塞窗口cwnd = 1，进入慢开始阶段。
+
+过程 1 -> 2 -> 4 执行慢开始算法，cwnd = ssthresh后改用拥塞避免算法，最终cwnd = 10，选A。
+
+发送方的窗口的上限值应当取为接收方窗口rwnd和拥塞窗口cwnd这两个变量中较小的一个。
+
 4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
