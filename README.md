@@ -380,6 +380,10 @@ RIP协议要求网络中的每一个路由器都要维护从它自己到其他�
 
 IPv4首部的前一部分的长度是固定的，共20字节，后一部分是可选字段，长度可变；IPv6首部的长度是固定的，共40字节。
 
+[Question 6](https://www.nowcoder.com/questionTerminal/955dad936ed4443bb3705d27e0ac23af)
+
+TFTP使用UDP作为传输层协议。
+
 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
