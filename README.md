@@ -511,7 +511,7 @@ Belady现象指的是在使用先进先出（FIFO）算法作为缺页置换算�
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
 
-临界区是进程访问临界资源的代码段，故说法不正确，选B。
+临界区是指进程访问临界资源的那段代码，故说法不正确，选B。
 
 [Question 2](https://www.nowcoder.com/questionTerminal/6432b302f7ca41db963e1adbba6287c1)
 
