@@ -384,6 +384,12 @@ IPv4首部的前一部分的长度是固定的，共20字节，后一部分是�
 
 TFTP使用UDP作为传输层协议。
 
+[Question 7](https://www.nowcoder.com/questionTerminal/6579a864619c48beb7792ea9608e569e)
+
+||FTP|TELNET|SMTP|DNS|
+|---|---|---|---|---|
+|端口号|21|23|25|53|
+
 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
