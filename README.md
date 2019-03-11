@@ -411,6 +411,10 @@ B类地址190.168.0.0在子网掩码255.255.224.0下可以划分8个子网，故
 
 路由聚合后应为10.1.192.0/21(8+8+5)
 
+[Question 7](https://www.nowcoder.com/questionTerminal/fb2527f7ab8c4627a7b0acd692f50432)
+
+255.255.255.255为本地广播地址。
+
 3. TCP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/0becf1efabdb4f6585ef9c7bc02f5bef)
