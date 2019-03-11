@@ -453,6 +453,10 @@ accept发生在三次握手后。
 
 在TCP的三次握手中，服务端从来不进入SYN_SENT状态，故A错；服务端收到客户端的ACK包后进入ESTABLISHED状态，故B错；如果服务端没有收到客户端的ACK包，服务端便知道客户端并没有要求建立连接，也不存在关闭连接这一说，故D错，选C。
 
+[Question 7](https://www.nowcoder.com/questionTerminal/a7c0a2d163ee48e7a1ffd447744daae9)
+
+对于连续ARQ协议来说，接收方不必对收到的分组逐个发送确认，而是在收到几个分组后，对按序到达的最后一个分组发送确认，这就是说，到这个分组为止的所有分组都已正确收到了，故需要重传的帧为4、5、6、7，帧数为4，选A。
+
 4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
