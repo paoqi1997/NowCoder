@@ -4,7 +4,7 @@
 
 ## Computer Basis
 
-1. 原码、反码及补码
+### 1. 原码、反码及补码
 
 正数的原码、反码及补码均相同，而负数的原码就是在其正数的原码的基础上，符号位取1；负数的反码就是在其原码的基础上，除符号位，其余位取反；负数的补码就是在其反码的基础上+1。
 
@@ -21,7 +21,7 @@
 
 a + b = 0x 7FFF FFFF FFFF FFFF + 0x 8000 0000 0000 0000 = 0x FFFF FFFF FFFF FFFF，负数在计算机中的存储形式为补码，故先-1再取反得到原码，最终为-1，故选B。
 
-2. 字节对齐
+### 2. 字节对齐
 
 [Question 1](https://www.nowcoder.com/questionTerminal/17e34bb0d97b4ef99f4b69458194c662)
 
@@ -39,7 +39,7 @@ struct stu
 
 struct/union的对齐标准就是按占用字节数最大的成员的字节数的整数倍对齐，故sizeof(xc) = (((5 + 1) + 8) + 2) + 4 = 20，选D。
 
-3. 字符编码
+### 3. 字符编码
 
 [Question 1](https://www.nowcoder.com/questionTerminal/cd143d9138cc434eae3e395ace08b0b4)
 
