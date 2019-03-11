@@ -445,6 +445,10 @@ accept发生在三次握手后。
 
 发送方的窗口的上限值应当取接收窗口rwnd和拥塞窗口cwnd这两个变量中较小的一个。
 
+[Question 6](https://www.nowcoder.com/questionTerminal/2d5a65326a4c43ffa87ca7bf5ad1a632)
+
+在TCP的三次握手中，服务端从来不进入SYN_SENT状态，故A错；服务端收到客户端的ACK包后进入ESTABLISHED状态，故B错；如果服务端没有收到客户端的ACK包，服务端便知道客户端并没有要求建立连接，也不存在关闭连接这一说，故D错，选C。
+
 4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
