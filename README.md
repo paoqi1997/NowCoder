@@ -47,7 +47,7 @@ struct/union的对齐标准就是按占用字节数最大的成员的字节数�
 
 ## C/C++
 
-1. const
+### 1. const
 
 [Question 1](https://www.nowcoder.com/questionTerminal/557b67decf6540a8ba85ef1f02406bfd)
 
@@ -70,11 +70,15 @@ char *const p2 = "world";
 
 非常量引用必须为左值，故A错误，选A。
 
-2. [static](https://www.nowcoder.com/questionTerminal/e3ea7a08df454558bee00fa1c99d73fe)
+### 2. static
+
+[Question 1](https://www.nowcoder.com/questionTerminal/e3ea7a08df454558bee00fa1c99d73fe)
 
 func1修改的是静态全局变量，func2修改的是局部变量，func3修改的是静态局部变量，故选B。
 
-3. [char](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
+### 3. char
+
+[Question 1](https://www.nowcoder.com/questionTerminal/3327439779e146dc9035b0977d9469eb)
 
 ```cpp
 signed char a = 0xe0;
@@ -89,7 +93,9 @@ a的原码为1110 0000，反码为1001 1111，补码为1010 0000，故a为-32，
 | char | -128 | 127 |
 |unsigned char|0|255|
 
-4. [short](https://www.nowcoder.com/questionTerminal/b7dd8b9cf69e4554912a45bdae9a8bda)
+### 4. short
+
+[Question 1](https://www.nowcoder.com/questionTerminal/b7dd8b9cf69e4554912a45bdae9a8bda)
 
 ```cpp
 short si = -32767;
@@ -103,7 +109,7 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 | short | -32768 | 32767 |
 |unsigned short|0| 65535 |
 
-5. operator priority
+### 5. operator priority
 
 [Question 1](https://www.nowcoder.com/questionTerminal/58769985d07646368f73e53a10c862f9)
 
@@ -119,7 +125,7 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 
 ++（后置递增） <--- ++（前置递增） <--- ! <--- &（取地址） <--- % <--- + <--- <= <--- == <--- != <--- &（逻辑与） <--- && <--- || <--- ? :
 
-6. operator overload
+### 6. operator overload
 
 [Question 1](https://www.nowcoder.com/questionTerminal/7609a03a292a472ba69008e92785fcbc)
 
@@ -134,7 +140,9 @@ si的原码为1111 1111 1111 1111，反码为1000 0000 0000 0000，补码为1000
 
 能作为函数重载的依据是：const、参数类型和参数个数，故选ABC。
 
-7. [Array](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
+### 7. Array
+
+[Question 1](https://www.nowcoder.com/questionTerminal/0959b5b04e7842adb74ddf071c3fa52f)
 
 ```cpp
 int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
@@ -142,7 +150,7 @@ int m[][3] = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 定义二维数组时可以省略第一维的大小，故选A。
 
-8. Function
+### 8. Function
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fd169364f4a42599aa7ade7f1c9bbd9)
 
@@ -171,7 +179,7 @@ CSomething a();
 
 应注意这里声明了一个名为a的函数，没有创建对象，故选E。
 
-9. Libraries
+### 9. Libraries
 
 [Question 1](https://www.nowcoder.com/questionTerminal/316082aaacfe4c3f8faf004e3e0fcf6d)
 
@@ -201,7 +209,7 @@ printf自右向左计算表达式，故选B。
 
 对于fopen函数，r+模式允许读写，在文件不存在时会报错；w+模式也允许读写，在文件不存在时会创建文件。
 
-10. Process/Thread
+### 10. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/e59625958f3f475ebc6655bdd1dcdc50)
 
@@ -258,7 +266,7 @@ int main() {
 
 缓冲区未刷新，故父子进程各输出2次，总共输出4次，选C。
 
-11. Class
+### 11. Class
 
 [Question 1](https://www.nowcoder.com/questionTerminal/45bb35c18c434829af740c0d843fcb1e)
 
@@ -291,7 +299,7 @@ a.func();
 
 const成员、引用成员和带有引用成员的类成员需要类内初始化，故选A。
 
-12. OOP
+### 12. OOP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9fb6068728734b6e854335f8bf893a3b)
 
@@ -309,11 +317,13 @@ func的参数不是指针，不存在虚函数的动态绑定，故直接调用B
 
 struct的默认继承方式为public继承，class的默认继承方式为private继承。
 
-13. [inline](https://www.nowcoder.com/questionTerminal/b592a5037f254806b42278154214bc50)
+### 13. inline
+
+[Question 1](https://www.nowcoder.com/questionTerminal/b592a5037f254806b42278154214bc50)
 
 内联函数不能包含复杂的语句，如switch和while等，故C的说法错误，选C。
 
-14. Details
+### 14. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/553f59e30d9f4d949bc39ad6761026b8)
 
@@ -358,7 +368,7 @@ void main() {
 
 ## Computer Network
 
-1. Protocol
+### 1. Protocol
 
 [Question 1](https://www.nowcoder.com/questionTerminal/bfac7c49f8cb404fbc1e66fe583c7f92)
 
@@ -390,7 +400,7 @@ TFTP使用UDP作为传输层协议。
 |---|---|---|---|---|
 |端口号|21|23|25|53|
 
-2. Details
+### 2. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/b5083535166747bda6ac4a17357641fe)
 
@@ -425,7 +435,7 @@ B类地址190.168.0.0在子网掩码255.255.224.0下可以划分8个子网，故
 
 255.255.255.255为本地广播地址。
 
-3. TCP
+### 3. TCP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/0becf1efabdb4f6585ef9c7bc02f5bef)
 
@@ -463,7 +473,7 @@ accept发生在三次握手后。
 
 对于连续ARQ协议来说，接收方不必对收到的分组逐个发送确认，而是在收到几个分组后，对按序到达的最后一个分组发送确认，这就是说，到这个分组为止的所有分组都已正确收到了，故需要重传的帧为4、5、6、7，帧数为4，故选A。
 
-4. HTTP
+### 4. HTTP
 
 [Question 1](https://www.nowcoder.com/questionTerminal/4093b5dc1d94447288b5560a5a7717b0)
 
