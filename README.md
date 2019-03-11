@@ -490,3 +490,39 @@ HTTP/2支持以下新特性：
 [Question 3](https://www.nowcoder.com/questionTerminal/1a499276f5e74da08e54eb9e125a42f3)
 
 cache-control是HTTP/1.1才有的。
+
+## Operating System
+
+### 1. CPU
+
+[Question 1](https://www.nowcoder.com/questionTerminal/683d207653d9460ba9b60418695f2c8d)
+
+P5: CPU(20ms) -> IO1(30ms) -> CPU(10ms) -> IO2(15ms)
+P1: IO2(10ms) -> CPU(10ms) -> IO1(30ms) -> CPU(10ms)
+P3: IO1(30ms) -> CPU(10ms) -> IO2(30ms) -> CPU(10ms)
+
+### 2. Memory
+
+[Question 1](https://www.nowcoder.com/questionTerminal/eea7506591b045cc85a122e1b44ec3a1)
+
+Belady现象指的是在使用先进先出（FIFO）算法作为缺页置换算法时，分配的页面数增多但缺页率反而提高的异常现象。
+
+### 3. Process
+
+[Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
+
+临界区是进程访问临界资源的代码段，故说法不正确，选B。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/6432b302f7ca41db963e1adbba6287c1)
+
+```cpp
+#include <stdio.h>
+#include <unistd.h>
+int main() {
+    fork(); // 2个进程
+    fork(); // 4个进程
+    fork(); // 8个进程
+    printf("hello\n");
+    return 0;
+}
+```
