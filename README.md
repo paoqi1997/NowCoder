@@ -540,6 +540,16 @@ LRU算法为最近最少使用算法。
 
 在可变分区存储管理方案中，若主存空间既有上邻空闲区，又有下邻空闲区，被系统收回的主存空间与相邻空闲区合并后空闲区数-1。
 
+[Question 8](https://www.nowcoder.com/questionTerminal/cc758b0f8c784741805d9b9dd8b0e5a8)
+
+||-15|-30|+15|-8|-6|
+|---|---|---|---|---|---|
+|空闲分区（55MB）|40|10|10 15|2 15|2 9|
+
+[Question 9](https://www.nowcoder.com/questionTerminal/11998b8b28e54fb18e6818378582170c)
+
+页号 = 逻辑地址 / 页长 = 2048 / 1024 = 2，页内地址 = 逻辑地址 % 页长 = 2048 % 1024 = 0。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
