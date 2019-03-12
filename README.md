@@ -532,6 +532,10 @@ LRU算法为最近最少使用算法。
 
 段式存储管理产生外碎片，页式存储管理产生内碎片，段页式存储管理产生内碎片。
 
+[Question 6](https://www.nowcoder.com/questionTerminal/8b6d9ff568d5424ea7c925001b3268bf)
+
+缺页中断属于程序中断。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
