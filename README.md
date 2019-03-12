@@ -511,7 +511,7 @@ Belady现象指的是在使用先进先出（FIFO）算法作为缺页置换算�
 
 虚拟内存的最大容量为计算机字长和内存容量与外存容量之和的最小值。
 
-### 3. Process
+### 3. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
 
@@ -530,3 +530,9 @@ int main() {
     return 0;
 }
 ```
+
+### 4. Details
+
+[Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
+
+主存地址寄存器MAR的位数与程序计数器PC的位数相同。
