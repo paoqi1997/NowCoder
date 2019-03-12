@@ -528,6 +528,10 @@ LRU算法为最近最少使用算法。
 
 发生缺页中断后，相关过程如下：分配页框 -> 磁盘I/O -> 修改页表。
 
+[Question 5](https://www.nowcoder.com/questionTerminal/d04e2fd5d2714abe8349c7265897e4aa)
+
+段式存储管理产生外碎片，页式存储管理产生内碎片。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
