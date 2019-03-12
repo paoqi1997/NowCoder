@@ -524,11 +524,15 @@ LRU算法为最近最少使用算法。
 |块2（第1组）|   |   |   | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 |块3（第1组）|   |   |   |   |   | 6 | 6 | 6(Y) | 6 | 6 |
 
-### 3. Linux
+### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
 
 系统文件不是Linux文件系统中的文件类型。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/a402b258a18b4a408567648bf3d8f9f2)
+
+文件目录以文件的形式存储。
 
 ### 4. Process/Thread
 
@@ -566,8 +570,23 @@ java.lang.Object和java.util.concurrent.locks.Condition。
 
 n * (w - 1) + 1 <= m
 
+[Question 6](https://www.nowcoder.com/questionTerminal/76258178ea9b4b1b8e6234031e79b04a)
+
+死锁发生的四个必要条件是：
+
+1. 互斥条件
+2. 请求与保持条件
+3. 不可剥夺条件
+4. 循环等待条件
+
+我们可以通过破坏条件来预防死锁，但互斥条件不可被破坏。
+
 ### 5. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
 
 主存地址寄存器MAR的位数与程序计数器PC的位数相同。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/86327c4dcd9e41488b87f1d04b92a81c)
+
+发生缺页中断后，相关过程如下：分配页框 -> 磁盘I/O -> 修改页表。
