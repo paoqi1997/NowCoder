@@ -524,6 +524,10 @@ LRU算法为最近最少使用算法。
 |块2（第1组）|   |   |   | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 |块3（第1组）|   |   |   |   |   | 6 | 6 | 6(Y) | 6 | 6 |
 
+[Question 4](https://www.nowcoder.com/questionTerminal/86327c4dcd9e41488b87f1d04b92a81c)
+
+发生缺页中断后，相关过程如下：分配页框 -> 磁盘I/O -> 修改页表。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
@@ -534,7 +538,21 @@ LRU算法为最近最少使用算法。
 
 文件目录以文件的形式存储。
 
-### 4. Process/Thread
+[Question 3](https://www.nowcoder.com/questionTerminal/afd2386f7a584a75b418e20dae78fe8e)
+
+文件系统在内存中维护一张唯一的文件分区表，里面保存了系统中所有已打开文件的FCB。
+
+### 4. Disk
+
+[Question 1](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
+
+盘块号 = 32 + 409612 / (1024 * 8) = 32 + 50 = 82，块内字节序号 = 409612 % (1024 * 8) / 8 = 12 / 8 = 1，故选C。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/8feac8ae324c440d83a623996f18b4ab)
+
+实现RAID 0至少需要两块硬盘。
+
+### 5. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
 
@@ -585,16 +603,12 @@ n * (w - 1) + 1 <= m
 
 最多允许m个进程同时进入互斥段，故信号量为m，此时有n - m个进程阻塞，故信号量为-(n - m) = m - n，选A。
 
-### 5. Details
+[Question 8](https://www.nowcoder.com/questionTerminal/240956b7ced1459295798562361a61db)
+
+进程间存在直接制约关系（同步问题）和间接制约关系（互斥问题）。
+
+### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
 
 主存地址寄存器MAR的位数与程序计数器PC的位数相同。
-
-[Question 2](https://www.nowcoder.com/questionTerminal/86327c4dcd9e41488b87f1d04b92a81c)
-
-发生缺页中断后，相关过程如下：分配页框 -> 磁盘I/O -> 修改页表。
-
-[Question 3](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
-
-盘块号 = 32 + 409612 / (1024 * 8) = 32 + 50 = 82，块内字节序号 = 409612 % (1024 * 8) / 8 = 12 / 8 = 1，故选C。
