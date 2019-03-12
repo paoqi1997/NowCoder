@@ -646,3 +646,7 @@ n * (w - 1) + 1 <= m
 [Question 4](https://www.nowcoder.com/questionTerminal/110dadb87afe43cdbd70dd6884ca0f97)
 
 在所有作业同时到达的情况下，平均周转时间最短的调度算法是短作业优先调度算法。
+
+[Question 5](https://www.nowcoder.com/questionTerminal/fd6a3459569843c0a2536c827dab8baa)
+
+对于多道批处理系统来说，最重要的是运行效率。
