@@ -616,3 +616,7 @@ n * (w - 1) + 1 <= m
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
 
 主存地址寄存器MAR的位数与程序计数器PC的位数相同。
+
+[Question 2](https://www.nowcoder.com/questionTerminal/b2e6084cc3a04d30a71c60e05a7fb9ae)
+
+作业调度算法包括：先来先服务（FCFS）、轮转法（RR）、短作业优先（SJF）
