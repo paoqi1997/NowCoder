@@ -629,6 +629,10 @@ n * (w - 1) + 1 <= m
 
 进程间存在直接制约关系（同步问题）和间接制约关系（互斥问题）。
 
+[Question 9](https://www.nowcoder.com/questionTerminal/343674d5143744f48c6027b981c1222a)
+
+等待状态就是阻塞状态，自旋锁spinlock使得线程在获得锁之前一直处于忙等（自旋）阻塞状态。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
