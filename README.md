@@ -536,6 +536,10 @@ LRU算法为最近最少使用算法。
 
 缺页中断属于程序中断。
 
+[Question 7](https://www.nowcoder.com/questionTerminal/d29fc50bc8384d879c07a87d4051d4db)
+
+在可变分区存储管理方案中，若主存空间既有上邻空闲区，又有下邻空闲区，被系统收回的主存空间与相邻空闲区合并后空闲区数-1。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
@@ -628,3 +632,7 @@ n * (w - 1) + 1 <= m
 [Question 3](https://www.nowcoder.com/questionTerminal/b9cee3e134d24400961728f96ef9f977)
 
 短程调度称为进程调度，中程调度称为交换调度，长程调度称为作业调度。
+
+[Question 4](https://www.nowcoder.com/questionTerminal/110dadb87afe43cdbd70dd6884ca0f97)
+
+在所有作业同时到达的情况下，平均周转时间最短的调度算法是短作业优先调度算法。
