@@ -624,3 +624,7 @@ n * (w - 1) + 1 <= m
 [Question 2](https://www.nowcoder.com/questionTerminal/b2e6084cc3a04d30a71c60e05a7fb9ae)
 
 作业调度算法包括：先来先服务（FCFS）、轮转法（RR）、短作业优先（SJF）
+
+[Question 3](https://www.nowcoder.com/questionTerminal/b9cee3e134d24400961728f96ef9f977)
+
+短程调度称为进程调度，中程调度称为交换调度，长程调度称为作业调度。
