@@ -511,7 +511,26 @@ Belady现象指的是在使用先进先出（FIFO）算法作为缺页置换算�
 
 虚拟内存的最大容量为计算机字长和内存容量与外存容量之和的最小值。
 
-### 3. Process/Thread
+[Question 3](https://www.nowcoder.com/questionTerminal/4c8e40890a3141adbebeaa4cce4ee1a7)
+
+LRU算法为最近最少使用算法。
+
+在2路组相连映射方式下，主存地址为0-1、4-5、8-9的映射到第0组，主存地址为2-3、6-7的映射到第1组。
+
+||0|4|8|2|0|6|8|6|4|8|
+|---|---|---|---|---|---|---|---|---|---|---|
+|块0（第0组）| 0 | 0 | 8 | 8 | 8 | 8 | 8(Y) | 8 | 8 | 8(Y) |
+|块1（第0组）|   | 4 | 4 | 4 | 0 | 0 | 0 | 0 | 4 | 4 |
+|块2（第1组）|   |   |   | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+|块3（第1组）|   |   |   |   |   | 6 | 6 | 6(Y) | 6 | 6 |
+
+### 3. Linux
+
+[Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
+
+系统文件不是Linux文件系统中的文件类型。
+
+### 4. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
 
@@ -543,7 +562,11 @@ Windows下的互斥量（Mutex）和临界区（Critical Section）是可递归�
 
 java.lang.Object和java.util.concurrent.locks.Condition。
 
-### 4. Details
+[Question 5](https://www.nowcoder.com/questionTerminal/9d99bf2509934c2e8758c9427a0cb189)
+
+n * (w - 1) + 1 <= m
+
+### 5. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
 
