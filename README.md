@@ -581,6 +581,10 @@ n * (w - 1) + 1 <= m
 
 我们可以通过破坏条件来预防死锁，但互斥条件不可被破坏。
 
+[Question 7](https://www.nowcoder.com/questionTerminal/705a1fd6af274b5b9507c19095777a48)
+
+最多允许m个进程同时进入互斥段，故信号量为m，此时有n - m个进程阻塞，故信号量为-(n - m) = m - n，选A。
+
 ### 5. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
@@ -590,3 +594,7 @@ n * (w - 1) + 1 <= m
 [Question 2](https://www.nowcoder.com/questionTerminal/86327c4dcd9e41488b87f1d04b92a81c)
 
 发生缺页中断后，相关过程如下：分配页框 -> 磁盘I/O -> 修改页表。
+
+[Question 3](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
+
+盘块号 = 32 + 409612 / (1024 * 8) = 32 + 50 = 82，块内字节序号 = 409612 % (1024 * 8) / 8 = 1，故选C。
