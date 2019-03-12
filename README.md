@@ -507,6 +507,10 @@ P3: IO1(30ms) -> CPU(10ms) -> IO2(30ms) -> CPU(10ms)
 
 Belady现象指的是在使用先进先出（FIFO）算法作为缺页置换算法时，分配的页面数增多但缺页率反而提高的异常现象。
 
+[Question 2](https://www.nowcoder.com/questionTerminal/195013bc3ae14f1d9b75e0d1e750326a)
+
+虚拟内存的最大容量为计算机字长和内存容量与外存容量之和的最小值。
+
 ### 3. Process
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
