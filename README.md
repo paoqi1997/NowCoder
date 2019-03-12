@@ -530,7 +530,7 @@ LRU算法为最近最少使用算法。
 
 [Question 5](https://www.nowcoder.com/questionTerminal/d04e2fd5d2714abe8349c7265897e4aa)
 
-段式存储管理产生外碎片，页式存储管理产生内碎片。
+段式存储管理产生外碎片，页式存储管理产生内碎片，段页式存储管理产生内碎片。
 
 ### 3. File
 
