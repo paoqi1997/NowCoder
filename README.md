@@ -531,6 +531,18 @@ int main() {
 }
 ```
 
+[Question 3](https://www.nowcoder.com/questionTerminal/5f6d704427424a1cb30eeb56af5d5b1f)
+
+锁可分为递归锁和非递归锁，其中递归锁又称为可重入锁。
+
+同一个线程多次获取同一个递归锁，不会产生死锁；同一个线程多次获取同一个非递归锁，则会产生死锁。
+
+Windows下的互斥量（Mutex）和临界区是（Critical Section）可递归的，Linux下的互斥量（pthread_mutex_t）默认是非递归的，但可以通过设置属性将其设置为递归的。
+
+[Question 4](https://www.nowcoder.com/questionTerminal/c6126fd5ba2d40b0bfca35439a6c3563)
+
+java.lang.Object和java.util.concurrent.locks.Condition。
+
 ### 4. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
