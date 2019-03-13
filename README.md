@@ -594,6 +594,10 @@ LRU算法为最近最少使用算法。
 
 磁盘花了2ms的时间将R1放入单缓冲区内，又花了4ms的时间处理R1，故R1总共花了6ms的时间，随后磁盘花了(20 - 2 - 4) + 2 = 16ms的时间到达R2的开头处，这里R2与R1一样，也花了6ms的时间，故R2总共花了16 + 6 = 22ms的时间，依此类推，处理这10个记录总共花了6 + (22 * 9) = 204ms的时间。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/c504ecac432d4fcd9c7a39edc79815bc)
+
+最少时间为(20 / 10 + 4) * 10 = 60ms。
+
 ### 5. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
