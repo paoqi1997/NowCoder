@@ -576,6 +576,10 @@ LRU算法为最近最少使用算法。
 |---|---|---|
 |4KiB|2TiB|16TiB|
 
+[Question 5](https://www.nowcoder.com/questionTerminal/71945d6cc3504ab781bbacbed8e533d7)
+
+最大文件的大小 = (2KB / 4B) * (2KB / 4B) * 2KB = 2^9 * 2^9 * 2KB = 2^9 * 2^10KB = 512 * 1MB = 512MB
+
 ### 4. Disk
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
