@@ -550,6 +550,10 @@ LRU算法为最近最少使用算法。
 
 页号 = 逻辑地址 / 页长 = 2048 / 1024 = 2，页内地址 = 逻辑地址 % 页长 = 2048 % 1024 = 0。
 
+[Question 10](https://www.nowcoder.com/questionTerminal/bc263921e2064960b4c3c595899004a9)
+
+在可变分区存储管理方案中，只需一次比较就可以判定系统是否满足作业对主存空间的要求的算法是最差适应算法。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
