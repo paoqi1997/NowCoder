@@ -633,6 +633,10 @@ n * (w - 1) + 1 <= m
 
 等待状态就是阻塞状态，自旋锁spinlock使得线程在获得锁之前一直处于忙等（自旋）阻塞状态。
 
+[Question 10](https://www.nowcoder.com/questionTerminal/6c234ffcbcfc44a5ad7b76a2742f7304)
+
+银行家算法是一种最有代表性的避免死锁的算法。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
