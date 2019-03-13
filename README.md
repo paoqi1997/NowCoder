@@ -637,6 +637,10 @@ n * (w - 1) + 1 <= m
 
 银行家算法是一种最有代表性的避免死锁的算法。
 
+[Question 11](https://www.nowcoder.com/questionTerminal/4d7bcf469715431a97f2914b3f0dc3a7)
+
+阻塞态不能直接转换到运行态，必须先经过就绪态。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
