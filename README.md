@@ -675,7 +675,7 @@ n * (w - 1) + 1 <= m
 
 [Question 13](https://www.nowcoder.com/questionTerminal/514d1767a4d64bc2a6a5c9a5b18e1b82)
 
-P原语为阻塞原语，V原语为唤醒原语，当信号量 <= 0 时，执行V操作后释放一个等待该信号量的进程。
+P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号量 <= 0，则释放一个等待该信号量的进程。
 
 ### 6. Details
 
