@@ -661,6 +661,14 @@ n * (w - 1) + 1 <= m
 
 阻塞态不能直接转换到运行态，必须先经过就绪态。
 
+[Question 12](https://www.nowcoder.com/questionTerminal/1469627261884cd3ac5755a49a46d8f9)
+
+||A|B|C|D|A|B|C|D|A|B|D|A|B|D|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|周转时间|||||||7|||||||14|
+
+由此可得到进程C、D的周转时间，再计算平均值即可。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
