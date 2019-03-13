@@ -673,6 +673,10 @@ n * (w - 1) + 1 <= m
 
 依此类推，可得到进程C、D的周转时间，再计算平均值即可。
 
+[Question 13](https://www.nowcoder.com/questionTerminal/514d1767a4d64bc2a6a5c9a5b18e1b82)
+
+P原语为阻塞原语，V原语为唤醒原语，当信号量 <= 0 时，执行V操作后释放一个等待该信号量的进程。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
