@@ -574,6 +574,10 @@ LRU算法为最近最少使用算法。
 
 实现RAID 0至少需要两块硬盘。
 
+[Question 3](https://www.nowcoder.com/questionTerminal/32bc5326b47c4abf9b7b68baa110952e)
+
+磁盘花了2ms的时间将R1放入单缓冲区内，又花了4ms的时间处理R1，故R1消耗了6ms的时间，随后花了(20 - 2 - 4) + 2 = 16ms的时间到达R2的开头处，这里R2与R1一样，也消耗了6ms的时间，故R2消耗了16 + 6 = 22ms的时间，依此类推，总共花费了6 + (22 * 9) = 204ms。
+
 ### 5. Process/Thread
 
 [Question 1](https://www.nowcoder.com/questionTerminal/49106f40d10c429cb33a5e4f38d50b5d)
