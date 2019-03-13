@@ -568,6 +568,14 @@ LRU算法为最近最少使用算法。
 
 文件系统在内存中维护一张唯一的文件分区表，里面保存了系统中所有已打开文件的FCB。
 
+[Question 4](https://www.nowcoder.com/questionTerminal/1a802d1ef25445d6a0fee9cc4b73dbac)
+
+对于ext3文件系统来说：
+
+|块大小|最大文件的大小|最大文件系统的大小|
+|---|---|---|
+|4KiB|2TiB|16TiB|
+
 ### 4. Disk
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
