@@ -339,7 +339,7 @@ struct的默认继承方式为public继承，class的默认继承方式为privat
 #ifdef __cplusplus
 extern "C" {
 #endif
-// function declaration
+// some declaration
 #ifdef __cplusplus
 }
 #endif
@@ -706,3 +706,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 6](https://www.nowcoder.com/questionTerminal/afe28dd2e2de4db88d37dca6e7bb3f69)
 
 重定位就是把程序的逻辑地址空间变换为内存中的物理地址空间的过程，又称为地址映射。
+
+[Question 7](https://www.nowcoder.com/questionTerminal/4a8348d9bf20499fbc9c12bb86a9d2c7)
+
+访管指令所引起的中断属于软中断。
