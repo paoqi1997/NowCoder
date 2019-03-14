@@ -584,6 +584,10 @@ LRU算法为最近最少使用算法。
 
 最大文件的大小 = (2KB / 4B) * (2KB / 4B) * 2KB = 2^9 * 2^9 * 2KB = 2^9 * 2^10KB = 512 * 1MB = 512MB
 
+[Question 6](https://www.nowcoder.com/questionTerminal/b27ae2f0a3f74753896e56ff3fac861d)
+
+inode和文件名并不是一一对应的，在硬链接方式下，一个inode对应多个文件名。
+
 ### 4. Disk
 
 [Question 1](https://www.nowcoder.com/questionTerminal/9c29042ca2814e8881870123b8058196)
