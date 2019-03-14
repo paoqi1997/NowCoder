@@ -681,6 +681,10 @@ n * (w - 1) + 1 <= m
 
 P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号量 <= 0，则释放一个等待该信号量的进程。
 
+[Question 14](https://www.nowcoder.com/questionTerminal/e73982cafdae4ab686d31e9737e02bd4)
+
+若系统中只有用户级线程，则处理机的基本调度单位是进程。
+
 ### 6. Details
 
 [Question 1](https://www.nowcoder.com/questionTerminal/22d8540272da40fd827731b30b68fff4)
