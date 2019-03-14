@@ -702,3 +702,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 5](https://www.nowcoder.com/questionTerminal/fd6a3459569843c0a2536c827dab8baa)
 
 对于多道批处理系统来说，最重要的是运行效率。
+
+[Question 6](https://www.nowcoder.com/questionTerminal/afe28dd2e2de4db88d37dca6e7bb3f69)
+
+重定位就是把程序的逻辑地址空间变换为内存中的物理地址空间的过程，又称为地址映射。
