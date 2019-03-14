@@ -554,6 +554,10 @@ LRU算法为最近最少使用算法。
 
 在可变分区存储管理方案中，只需进行一次比较就可以判定系统是否满足作业对主存空间的要求的算法是最差适应算法。
 
+[Question 11](https://www.nowcoder.com/questionTerminal/c23a1ef250b241138c77123b9b302af0)
+
+通道又称I/O处理器，它用于实现内存与外设之间的信息传输。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
