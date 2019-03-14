@@ -558,6 +558,10 @@ LRU算法为最近最少使用算法。
 
 通道又称I/O处理器，它用于实现内存与外设之间的信息传输。
 
+[Question 12](https://www.nowcoder.com/questionTerminal/e0cb0ca68f9d4dfab568282af0a1e2a1)
+
+页号 = 逻辑地址 / 页面大小 = 3000 / 1024 = 2，对应的块号为1，故对应的物理地址 = 1 * 1024 + 3000 % 1024 = 1976。
+
 ### 3. File
 
 [Question 1](https://www.nowcoder.com/questionTerminal/727d7b5a1ff84880a9fef115a99ee1b0)
