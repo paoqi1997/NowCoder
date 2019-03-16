@@ -35,3 +35,7 @@
 ### 8. [缩写](https://www.nowcoder.com/questionTerminal/45083499b8c5404fb1db44c6ea4f170a)
 
 题目分析：略。
+
+### 9. [数位重排](https://www.nowcoder.com/questionTerminal/f970201e9f7e4040ab25a40918e27d15)
+
+题目分析：略。
