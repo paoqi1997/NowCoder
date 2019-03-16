@@ -1,8 +1,8 @@
-# Answers on NowCoder
+# Answers for NowCoder
 
 习题答案。
 
-## NetCase
+## NetEase
 
 ### 1. [彩色的砖块](https://www.nowcoder.com/questionTerminal/8c29f4d1bea84d6ba2847e079b7420f7)
 
