@@ -19,3 +19,7 @@
 ### 4. [操作序列](https://www.nowcoder.com/questionTerminal/b53bda356a494154b6411d80380295f5)
 
 题目分析：找出规律即可。
+
+### 5. [独立的小易](https://www.nowcoder.com/questionTerminal/a99cdf4e2f44499e80749699cc2ec2b9)
+
+题目分析：分情况讨论即可。
