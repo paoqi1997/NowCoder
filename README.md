@@ -727,9 +727,9 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 
 ### Linked List
 
-1. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
+[Question 1](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
-头插法。
+利用头插法反转链表。
 
 ```cpp
 ListNode* reverseList(ListNode *pHead) {
@@ -747,7 +747,7 @@ ListNode* reverseList(ListNode *pHead) {
 
 ### Binary Tree
 
-1. [重建二叉树](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
+[Question 1](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
 
 查找根节点并递归地构建左右子树。
 
