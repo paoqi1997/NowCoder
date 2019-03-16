@@ -11,3 +11,7 @@
 ### 2. [等差数列](https://www.nowcoder.com/questionTerminal/e11bc3a213d24fc1989b21a7c8b50c3f)
 
 题目分析：略。
+
+### 3. [交错01串](https://www.nowcoder.com/questionTerminal/3fbd8fe929ea4eb3a254c0ed34ac993a)
+
+题目分析：略。
