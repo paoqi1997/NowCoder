@@ -23,3 +23,7 @@
 ### 5. [独立的小易](https://www.nowcoder.com/questionTerminal/a99cdf4e2f44499e80749699cc2ec2b9)
 
 题目分析：分情况讨论即可。
+
+### 6. [疯狂队列](https://www.nowcoder.com/questionTerminal/d996665fbd5e41f89c8d280f84968ee1)
+
+题目分析：这里要得到最大绝对值，那么我们先得到一个升序序列，然后自左右向中间逼近，并在此期间计算疯狂值，最后得到结果。
