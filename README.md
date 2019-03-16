@@ -729,6 +729,8 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 
 1. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
+头插法。
+
 ```cpp
 ListNode* reverseList(ListNode *pHead) {
     ListNode *p = pHead;
@@ -740,5 +742,43 @@ ListNode* reverseList(ListNode *pHead) {
         p = q;
     }
     return head;
+}
+```
+
+### Binary Tree
+
+1. [重建二叉树](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
+
+查找根节点并递归地构建左右子树。
+
+```cpp
+TreeNode* reConstructBinaryTree(std::vector<int> pre, std::vector<int> in) {
+    if (pre.empty()) {
+        return nullptr;
+    }
+    TreeNode *root = new TreeNode(pre[0]);
+    int rootindex = 0, length = in.size();
+    // 查找当前根节点
+    for (int i = 0; i < length; ++i) {
+        if (in[i] == pre[0]) {
+            rootindex = i;
+            break;
+        }
+    }
+    std::vector<int> left_pre, left_in, right_pre, right_in;
+    // 构建左子树
+    for (int i = 0; i < rootindex; ++i) {
+        left_pre.push_back(pre[i + 1]);
+        left_in.push_back(in[i]);
+    }
+    // 构建右子树
+    for (int i = rootindex + 1; i < length; ++i) {
+        right_pre.push_back(pre[i]);
+        right_in.push_back(in[i]);
+    }
+    // 递归构建左右节点
+    root->left = reConstructBinaryTree(left_pre, left_in);
+    root->right = reConstructBinaryTree(right_pre, right_in);
+    return root;
 }
 ```
