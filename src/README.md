@@ -27,3 +27,7 @@
 ### 6. [疯狂队列](https://www.nowcoder.com/questionTerminal/d996665fbd5e41f89c8d280f84968ee1)
 
 题目分析：这里要求绝对值最大，那么我们先得到一个升序序列，然后自左右向中间逼近，并在此期间计算疯狂值，最后得到结果。
+
+### 7. [最小众倍数](https://www.nowcoder.com/questionTerminal/3e9d7d22b7dd4daab695b795d243315b)
+
+题目分析：略。
