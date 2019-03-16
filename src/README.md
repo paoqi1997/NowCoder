@@ -15,3 +15,7 @@
 ### 3. [交错01串](https://www.nowcoder.com/questionTerminal/3fbd8fe929ea4eb3a254c0ed34ac993a)
 
 题目分析：略。
+
+### 4. [操作序列](https://www.nowcoder.com/questionTerminal/b53bda356a494154b6411d80380295f5)
+
+题目分析：找出规律即可。
