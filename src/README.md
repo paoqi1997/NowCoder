@@ -31,3 +31,7 @@
 ### 7. [最小众倍数](https://www.nowcoder.com/questionTerminal/3e9d7d22b7dd4daab695b795d243315b)
 
 题目分析：略。
+
+### 8. [缩写](https://www.nowcoder.com/questionTerminal/45083499b8c5404fb1db44c6ea4f170a)
+
+题目分析：略。
