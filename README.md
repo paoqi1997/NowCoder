@@ -735,6 +735,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 ListNode* reverseList(ListNode *pHead) {
     ListNode *p = pHead;
     ListNode *head = nullptr;
+    // head <- p <- q
     while (p != nullptr) {
         ListNode *q = p->next;
         p->next = head;
