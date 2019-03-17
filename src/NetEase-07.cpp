@@ -1,24 +1,39 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-    int x[5];
-    for (int i = 0; i < 5; ++i) {
-        cin >> x[i];
+    int n;
+    cin >> n;
+
+    int h[n];
+    vector<int> box;
+    for (int i = 0; i < n; ++i) {
+        cin >> h[i];
+        box.push_back(h[i]);
     }
 
-    int val = 0, count = 0;
-    while (count < 3) {
-        ++val;
-        count = 0;
-        for (auto c : x) {
-            if (val % c == 0) {
-                ++count;
-            }
-        }
-    } cout << val << endl;
+    sort(box.begin(), box.end());
+
+    int min = box[0];
+    int max = box[n - 1];
+    int crazy = max - min;
+
+    int next_min_index = 1;
+    int next_max_index = n - 2;
+
+    while (next_min_index < next_max_index) {
+        crazy += max - box[next_min_index];
+        crazy += box[next_max_index] - min;
+        min = box[next_min_index++];
+        max = box[next_max_index--];
+    }
+
+    crazy += std::max(max - box[next_min_index], box[next_max_index] - min);
+    cout << crazy << endl;
 
     return 0;
 }

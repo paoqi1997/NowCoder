@@ -1,36 +1,20 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    int t;
-    cin >> t;
+    string s;
+    getline(cin, s);
 
-    int x[t];
-    vector<string> box;
-    for (int i = 0; i < t; ++i) {
-        cin >> x[i];
-        box.push_back(to_string(x[i]));
-    }
-
-    for (int i = 0; i < t; ++i) {
-        bool flag = false;
-        do {
-            string s = box[i];
-            if (stoi(s) != x[i] && stoi(s) % x[i] == 0) {
-                flag = true;
-                break;
-            }
-        } while (next_permutation(box[i].begin(), box[i].end()));
-        if (flag) {
-            cout << "Possible" << endl;
-        } else {
-            cout << "Impossible" << endl;
+    size_t preIndex = 0;
+    for (size_t i = 0; i < s.size(); ++i) {
+        if (s[i] == ' ') {
+            cout << s[preIndex];
+            preIndex = i + 1;
         }
-    }
+    } cout << s[preIndex] << endl;
 
     return 0;
 }

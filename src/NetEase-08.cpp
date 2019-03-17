@@ -1,20 +1,24 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    string s;
-    getline(cin, s);
+    int x[5];
+    for (int i = 0; i < 5; ++i) {
+        cin >> x[i];
+    }
 
-    size_t preIndex = 0;
-    for (size_t i = 0; i < s.size(); ++i) {
-        if (s[i] == ' ') {
-            cout << s[preIndex];
-            preIndex = i + 1;
+    int val = 0, count = 0;
+    while (count < 3) {
+        ++val;
+        count = 0;
+        for (auto c : x) {
+            if (val % c == 0) {
+                ++count;
+            }
         }
-    } cout << s[preIndex] << endl;
+    } cout << val << endl;
 
     return 0;
 }

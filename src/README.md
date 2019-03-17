@@ -24,18 +24,22 @@
 
 题目分析：分情况讨论即可。
 
-### 6. [疯狂队列](https://www.nowcoder.com/questionTerminal/d996665fbd5e41f89c8d280f84968ee1)
+### 6. [小易喜欢的数列](https://www.nowcoder.com/questionTerminal/49375dd6a42d4230b0dc4ea5a2597a9b)
+
+题目分析：动态规划，其中递推方程为dp[i][j] += dp[i - 1][j]，其中1 <= j <= k。
+
+### 7. [疯狂队列](https://www.nowcoder.com/questionTerminal/d996665fbd5e41f89c8d280f84968ee1)
 
 题目分析：这里要求绝对值最大，那么我们先得到一个升序序列，然后自左右向中间逼近，并在此期间计算疯狂值，最后得到结果。
 
-### 7. [最小众倍数](https://www.nowcoder.com/questionTerminal/3e9d7d22b7dd4daab695b795d243315b)
+### 8. [最小众倍数](https://www.nowcoder.com/questionTerminal/3e9d7d22b7dd4daab695b795d243315b)
 
 题目分析：略。
 
-### 8. [缩写](https://www.nowcoder.com/questionTerminal/45083499b8c5404fb1db44c6ea4f170a)
+### 9. [缩写](https://www.nowcoder.com/questionTerminal/45083499b8c5404fb1db44c6ea4f170a)
 
 题目分析：略。
 
-### 9. [数位重排](https://www.nowcoder.com/questionTerminal/f970201e9f7e4040ab25a40918e27d15)
+### 10. [数位重排](https://www.nowcoder.com/questionTerminal/f970201e9f7e4040ab25a40918e27d15)
 
 题目分析：略。
