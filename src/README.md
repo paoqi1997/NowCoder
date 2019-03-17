@@ -43,3 +43,7 @@
 ### 10. [数位重排](https://www.nowcoder.com/questionTerminal/f970201e9f7e4040ab25a40918e27d15)
 
 题目分析：略。
+
+### 11. [数轴](https://www.nowcoder.com/questionTerminal/ff0e55dcb75b45b09164c56f87cdf737)
+
+题目分析：相邻两点中左边的点记为l，右边的点记为r，最左边的点记为ll，最右边的点记为rr，点ll向右移动，点r向左移动，计入左端；点rr向左移动，点l向右移动，计入右端，由此计算左右之间的距离。
