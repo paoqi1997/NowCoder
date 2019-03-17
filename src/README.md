@@ -26,7 +26,7 @@
 
 ### 6. [小易喜欢的数列](https://www.nowcoder.com/questionTerminal/49375dd6a42d4230b0dc4ea5a2597a9b)
 
-题目分析：动态规划，其中递推方程为dp[i][j] += dp[i - 1][j]，其中1 <= j <= k。
+题目分析：动态规划，其中递推方程为dp[i][j] += dp[i - 1][l]，其中1 <= l <= k。
 
 ### 7. [疯狂队列](https://www.nowcoder.com/questionTerminal/d996665fbd5e41f89c8d280f84968ee1)
 

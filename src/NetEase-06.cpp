@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -23,8 +21,8 @@ int main()
             sum = (sum + dp[i - 1][j]) % mod;
         }
         for (int j = 1; j <= k; ++j) {
-            int invalid = 0;
             // 排除掉A % B == 0的情况
+            int invalid = 0;
             for (int b = 2; b * j <= k; ++b) {
                 invalid = (invalid + dp[i - 1][b * j]) % mod;
             }
