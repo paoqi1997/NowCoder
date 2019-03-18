@@ -47,3 +47,7 @@
 ### 11. [数轴](https://www.nowcoder.com/questionTerminal/ff0e55dcb75b45b09164c56f87cdf737)
 
 题目分析：相邻两点中左边的点记为l，右边的点记为r，最左边的点记为ll，最右边的点记为rr，点ll向右推进，点r投靠左边，计入左端；点rr向左推进，点l投靠右边，计入右端，由此计算左右之间的距离。
+
+### 12. [骰子游戏](https://www.nowcoder.com/questionTerminal/0e83797c34e54cca91179fe9ad681bc4)
+
+题目分析：动态规划，其中递推方程为dp[i][j] += dp[i - 1][j - k]，其中i <= j <= 6 * i，1 <= k <= 6。
