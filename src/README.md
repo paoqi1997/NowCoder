@@ -57,3 +57,7 @@
 ### 1. [求素数](https://www.nowcoder.com/questionTerminal/ea1c82be0c144d74925a044973fe9a5c)
 
 题目分析：素数的倍数一定不是素数。
+
+### 2. [最大差值](https://www.nowcoder.com/questionTerminal/c1ad0923a49b4347bd0bf8070610d046)
+
+题目分析：桶排序。
