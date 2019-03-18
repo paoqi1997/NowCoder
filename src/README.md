@@ -51,3 +51,9 @@
 ### 12. [骰子游戏](https://www.nowcoder.com/questionTerminal/0e83797c34e54cca91179fe9ad681bc4)
 
 题目分析：动态规划，其中递推方程为dp[i][j] += dp[i - 1][j - k]，其中i <= j <= 6 * i，1 <= k <= 6。
+
+## G-bits
+
+### 1. [求素数](https://www.nowcoder.com/questionTerminal/ea1c82be0c144d74925a044973fe9a5c)
+
+题目分析：素数的倍数一定不是素数。
