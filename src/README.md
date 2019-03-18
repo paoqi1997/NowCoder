@@ -61,3 +61,7 @@
 ### 2. [最大差值](https://www.nowcoder.com/questionTerminal/c1ad0923a49b4347bd0bf8070610d046)
 
 题目分析：桶排序。
+
+### 3. [字母数字混合排序](https://www.nowcoder.com/questionTerminal/6d27688e056c491b9024fa1340404666)
+
+题目分析：略。
