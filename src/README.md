@@ -65,3 +65,7 @@
 ### 3. [字母数字混合排序](https://www.nowcoder.com/questionTerminal/6d27688e056c491b9024fa1340404666)
 
 题目分析：略。
+
+### 4. [走格子游戏](https://www.nowcoder.com/questionTerminal/e15b45484ff049ddb84fa1b8d309948c)
+
+题目分析：深搜，为避免游戏失败，行动力在任何时候都应大于0，我们一开始应将重心放在行动力的谷值，然后选择行动力的谷值最高的路线。
