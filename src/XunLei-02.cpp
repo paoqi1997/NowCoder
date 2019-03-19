@@ -9,7 +9,7 @@ int main()
     cin >> n;
 
     if (n == 0) {
-        cout << 0 << endl;
+        cout << 0;
     } else {
         bool flag = false;
         string s = to_string(n);
@@ -33,7 +33,7 @@ int main()
                 }
             }
         }
-    }
+    } cout << endl;
 
     return 0;
 }
