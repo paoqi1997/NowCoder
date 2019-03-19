@@ -11,7 +11,7 @@ int main()
     string s = "1";
     for (int i = 1; i <= n; ++i) {
         int carry = 0;
-        for (size_t j = 0; j < s.size(); ++j) {
+        for (size_t j = 0; j < s.length(); ++j) {
             int cnt = (s[j] - '0') * 2;
             // 追加上一位的进位
             cnt += carry;
@@ -19,7 +19,7 @@ int main()
             carry = cnt / 10;
             // 结算
             s[j] = cnt % 10 + '0';
-            if (j == s.size() - 1 && carry > 0) {
+            if (j == s.length() - 1 && carry > 0) {
                 s.push_back(carry + '0');
                 break;
             }
