@@ -89,3 +89,39 @@
 ### 2. [整数反转](https://www.nowcoder.com/questionTerminal/14733e0bfa9b474ba7cbe0bb2e459731)
 
 题目分析：略。
+
+### 3. [整数求和](https://www.nowcoder.com/questionTerminal/6701fc9b1be84bafac1091705df2e0b4)
+
+题目分析：见下。
+
+#### 1. 动态规划
+
+dp[i][j]为在[1, ..., i]中取若干个整数求和等于j的组合数。
+
+```cpp
+for (int i = 0; i <= n; ++i) {
+    dp[i][0] = 1;
+}
+for (int i = 1; i <= n; ++i) {
+    for (int j = 1; j <= m; ++j) {
+        if (j - i >= 0) {
+            dp[i][j] = dp[i - 1][j] + dp[i - 1][j - i];
+        } else {
+            dp[i][j] = dp[i - 1][j];
+        }
+    }
+}
+```
+
+#### 2. 01背包
+
+dp[j]为背包容量等于 j 时的物品的价值总和，由于物品的重量就是物品的价值，故只需要维护一张一维表。
+
+```cpp
+dp[0] = 1;
+for (int i = 1; i <= n; ++i) {
+    for (int j = m; j >= i; --j) {
+        dp[j] += dp[j - i];
+    }
+}
+```
