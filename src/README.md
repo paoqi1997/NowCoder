@@ -75,3 +75,7 @@
 ### 1. [数据分页说明](https://www.nowcoder.com/questionTerminal/b6c448328c4f486d8cce39245889cdfe)
 
 题目分析：略。
+
+### 2. [第二大的数](https://www.nowcoder.com/questionTerminal/ce710d3a27ca475b97bbae0cb227f1b5)
+
+题目分析：略。
