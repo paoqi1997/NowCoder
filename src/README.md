@@ -85,3 +85,7 @@
 ### 1. [2的N次方](https://www.nowcoder.com/questionTerminal/e9a4919b8848451d9aff81e3cdd133b1)
 
 题目分析：大数运算。
+
+### 2. [整数反转](https://www.nowcoder.com/questionTerminal/14733e0bfa9b474ba7cbe0bb2e459731)
+
+题目分析：略。
