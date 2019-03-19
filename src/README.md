@@ -69,3 +69,9 @@
 ### 4. [走格子游戏](https://www.nowcoder.com/questionTerminal/e15b45484ff049ddb84fa1b8d309948c)
 
 题目分析：深搜，为避免游戏失败，行动力在任何时候都应大于0，我们一开始应将重心放在行动力的谷值，然后选择行动力的谷值最高的路线。
+
+## ChangYou
+
+### 1. [数据分页说明](https://www.nowcoder.com/questionTerminal/b6c448328c4f486d8cce39245889cdfe)
+
+题目分析：略。
