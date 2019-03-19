@@ -79,3 +79,9 @@
 ### 2. [第二大的数](https://www.nowcoder.com/questionTerminal/ce710d3a27ca475b97bbae0cb227f1b5)
 
 题目分析：略。
+
+## XunLei
+
+### 1. [2的N次方](https://www.nowcoder.com/questionTerminal/e9a4919b8848451d9aff81e3cdd133b1)
+
+题目分析：大数运算。
