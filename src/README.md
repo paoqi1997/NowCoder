@@ -131,3 +131,7 @@ for (int i = 1; i <= n; ++i) {
 ### 1. [乔乔的包](https://www.nowcoder.com/questionTerminal/a16b6679cc1841c3a20324279116d040)
 
 题目分析：01背包。
+
+### 2. [小明卖食物](https://www.nowcoder.com/questionTerminal/fba13a9bd7ad4bfaa02cefbc2512aaae)
+
+题目分析：略。
