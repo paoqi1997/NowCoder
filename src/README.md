@@ -144,7 +144,6 @@ for (int i = 1; i <= n; ++i) {
 
 ```cpp
 for (int i = 0; i <= m; ++i) {
-    dp[i][0] = 0;
     dp[i][1] = 1;
 }
 for (int j = 0; j <= n; ++j) {

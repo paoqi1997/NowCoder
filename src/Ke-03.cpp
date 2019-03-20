@@ -4,7 +4,8 @@
 using namespace std;
 
 int fn(int m, int n) {
-    // 没有水可倒或所有的水都倒入一个容器里
+    // m == 0 <-> 没有水可倒
+    // n == 1 <-> 所有的水都倒入一个容器里
     if (m == 0 || n == 1) {
         return 1;
     }
@@ -23,7 +24,6 @@ int dp(int m, int n) {
     memset(dp, 0, sizeof(dp));
 
     for (int i = 0; i <= m; ++i) {
-        dp[i][0] = 0;
         dp[i][1] = 1;
     }
 
