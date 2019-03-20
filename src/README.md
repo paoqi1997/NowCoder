@@ -135,3 +135,43 @@ for (int i = 1; i <= n; ++i) {
 ### 2. [小明卖食物](https://www.nowcoder.com/questionTerminal/fba13a9bd7ad4bfaa02cefbc2512aaae)
 
 题目分析：略。
+
+### 3. [倒水](https://www.nowcoder.com/questionTerminal/8ffeb301d208490aaf5b9f9556e951ab)
+
+题目分析：如下。
+
+#### 1. 动态规划
+
+```cpp
+for (int i = 0; i <= m; ++i) {
+    dp[i][0] = 0;
+    dp[i][1] = 1;
+}
+for (int j = 0; j <= n; ++j) {
+    dp[0][j] = 1;
+}
+for (int i = 1; i <= m; ++i) {
+    for (int j = 1; j <= n; ++j) {
+        if (j > i) {
+            dp[i][j] = dp[i][i];
+        } else {
+            dp[i][j] = dp[i][j - 1] + dp[i - j][j];
+        }
+    }
+}
+```
+
+#### 2. m个苹果放入n个盘子
+
+```cpp
+int fn(int m, int n) {
+    if (m == 0 || n == 1) {
+        return 1;
+    }
+    if (n > m) {
+        return fn(m, m);
+    } else {
+        return fn(m, n - 1) + fn(m - n, n);
+    }
+}
+```
