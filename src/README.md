@@ -125,3 +125,9 @@ for (int i = 1; i <= n; ++i) {
     }
 }
 ```
+
+## Ke
+
+### 1. [乔乔的包](https://www.nowcoder.com/questionTerminal/a16b6679cc1841c3a20324279116d040)
+
+题目分析：01背包。
