@@ -3,22 +3,6 @@
 
 using namespace std;
 
-int fn(int m, int n) {
-    // m == 0 <-> 没有水可倒入
-    // n == 1 <-> 所有的水都倒入一个容器里
-    if (m == 0 || n == 1) {
-        return 1;
-    }
-    if (n > m) {
-        // 必定有n - m个容器空着
-        return fn(m, m);
-    } else {
-        // fn(m, n - 1) <-> 至少有一个容器空着
-        // fn(m - n, n) <-> 每个容器都倒入一升水
-        return fn(m, n - 1) + fn(m - n, n);
-    }
-}
-
 int dp(int m, int n) {
     int dp[m + 1][n + 1];
     memset(dp, 0, sizeof(dp));
@@ -41,6 +25,22 @@ int dp(int m, int n) {
     } return dp[m][n];
 }
 
+int fn(int m, int n) {
+    // m == 0 <-> 没有水可倒入
+    // n == 1 <-> 所有的水都倒入一个容器里
+    if (m == 0 || n == 1) {
+        return 1;
+    }
+    if (n > m) {
+        // 必定有n - m个容器空着
+        return fn(m, m);
+    } else {
+        // fn(m, n - 1) <-> 至少有一个容器空着
+        // fn(m - n, n) <-> 每个容器都倒入一升水
+        return fn(m, n - 1) + fn(m - n, n);
+    }
+}
+
 int main()
 {
     int x;
@@ -50,9 +50,9 @@ int main()
         int m, n;
         cin >> m >> n;
         if (true) {
-            cout << fn(m, n) << endl;
-        } else {
             cout << dp(m, n) << endl;
+        } else {
+            cout << fn(m, n) << endl;
         }
     }
 
