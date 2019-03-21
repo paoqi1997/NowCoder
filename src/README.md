@@ -184,3 +184,9 @@ int fn(int m, int n) {
 ### 1. [买橘子](https://www.nowcoder.com/questionTerminal/73e0552b78474a9086781e47f4e01d73)
 
 题目分析：略。
+
+## TuNiu
+
+### 1. [最长公共子串](https://www.nowcoder.com/questionTerminal/5bb66d2ceb3a433aa6e1c3e254554b15)
+
+题目分析：略。
