@@ -190,3 +190,9 @@ int fn(int m, int n) {
 ### 1. [最长公共子串](https://www.nowcoder.com/questionTerminal/5bb66d2ceb3a433aa6e1c3e254554b15)
 
 题目分析：略。
+
+## WeBank
+
+### 1. [单词缩写](https://www.nowcoder.com/questionTerminal/af2c953f9fc8464fa0e3252da8eb4131)
+
+题目分析：略。
