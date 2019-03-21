@@ -4,7 +4,7 @@
 using namespace std;
 
 int fn(int m, int n) {
-    // m == 0 <-> 没有水可倒
+    // m == 0 <-> 没有水可倒入
     // n == 1 <-> 所有的水都倒入一个容器里
     if (m == 0 || n == 1) {
         return 1;
@@ -14,7 +14,7 @@ int fn(int m, int n) {
         return fn(m, m);
     } else {
         // fn(m, n - 1) <-> 至少有一个容器空着
-        // fn(m - n, n) <-> 所有容器都有水倒入，相当于从每个容器中拿掉一升水
+        // fn(m - n, n) <-> 每个容器都倒入一升水
         return fn(m, n - 1) + fn(m - n, n);
     }
 }
@@ -26,7 +26,6 @@ int dp(int m, int n) {
     for (int i = 0; i <= m; ++i) {
         dp[i][1] = 1;
     }
-
     for (int j = 0; j <= n; ++j) {
         dp[0][j] = 1;
     }
