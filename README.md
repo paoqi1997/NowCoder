@@ -501,7 +501,9 @@ cache-control是HTTP/1.1才有的。
 [Question 1](https://www.nowcoder.com/questionTerminal/683d207653d9460ba9b60418695f2c8d)
 
 P5: CPU(20ms) -> IO1(30ms) -> CPU(10ms) -> IO2(15ms)
+
 P1: IO2(10ms) -> CPU(10ms) -> IO1(30ms) -> CPU(10ms)
+
 P3: IO1(30ms) -> CPU(10ms) -> IO2(30ms) -> CPU(10ms)
 
 ### 2. Memory
