@@ -178,3 +178,9 @@ int fn(int m, int n) {
 ### 4. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c245af6cfdce49ceb5435f649ee14f89)
 
 题目分析：略。
+
+## KuGou
+
+### 1. [买橘子](https://www.nowcoder.com/questionTerminal/73e0552b78474a9086781e47f4e01d73)
+
+题目分析：略。
