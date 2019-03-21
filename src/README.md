@@ -196,3 +196,7 @@ int fn(int m, int n) {
 ### 1. [单词缩写](https://www.nowcoder.com/questionTerminal/af2c953f9fc8464fa0e3252da8eb4131)
 
 题目分析：略。
+
+### 2. [舞会](https://www.nowcoder.com/questionTerminal/9efe02ab547d4a9995fc87a746d7eaec)
+
+题目分析：略。
