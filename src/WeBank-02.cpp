@@ -32,6 +32,7 @@ int main()
     }
 
     int cnt = 0;
+    // 男士需要的舞曲
     for (int i = 1; i <= n; ++i) {
         int _cnt = 0;
         for (int j = 1; j <= m; ++j) {
@@ -39,6 +40,7 @@ int main()
         }
         cnt = max(cnt, _cnt);
     }
+    // 女士需要的舞曲
     for (int i = 1; i <= m; ++i) {
         int _cnt = 0;
         for (int j = 1; j <= n; ++j) {
