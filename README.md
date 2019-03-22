@@ -730,6 +730,28 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 
 ## Algorithms and Data Structures
 
+### Array
+
+[Question 1](https://www.nowcoder.com/questionTerminal/abc3fe2ce8e146608e868a70efebf62e)
+
+从左下角开始寻找，若target < array[row][col]，则在上方，若target > array[row][col]，则在右方。
+
+```cpp
+bool Find(int target, vector<vector<int>> array) {
+    int row = array.size() - 1;
+    size_t col = 0;
+    while (row >= 0 && col < array[0].size()) {
+        if (target == array[row][col]) {
+            return true;
+        } else if (target < array[row][col]) {
+            --row;
+        } else {
+            ++col;
+        }
+    } return false;
+}
+```
+
 ### Linked List
 
 [Question 1](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
