@@ -34,9 +34,23 @@ dest空间不够大，存在内存访问越界的问题；遇到'\0'拷贝就结
 
 ### 4. 说下new和malloc的区别？
 
-new表达式尝试申请存储空间，并在已申请的存储空间上，尝试构造并初始化为一个未命名的对象，或者未命名的对象数组，你也可以重载operator new以替换分配函数，它们最终为new表达式所调用。
++ new是C++的，malloc是C的。
 
-malloc函数尝试申请存储空间，且申请到的存储空间尚未初始化。
++ new和delete配对使用，malloc和free配对使用。
+
++ new是运算符，malloc是函数。
+
++ new会调用构造函数，malloc不会。
+
++ 若申请内存失败，new抛出异常，malloc返回NULL。
+
++ new会检查类型，malloc只关心申请内存的字节数，不关心类型。
+
++ new返回时不需要类型转换，malloc需要。
+
+### 5. 说下new的底层实现？
+
+首先调用operator new，然后调用operator new中的malloc，再调用相应的构造函数。
 
 ### Algorithms and Data Structures
 
