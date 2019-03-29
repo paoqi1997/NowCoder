@@ -10,6 +10,10 @@
 
 对于extern变量，在.cpp文件中定义变量，在.h文件中用extern声明该变量，其他文件就可以通过包含该头文件以使用该变量；extern函数同理；对于extern "C"来说，这是为了解决C++代码调用C代码的问题，比方说在.c文件中编写实现代码，在.h文件中添加extern "C"以指示编译器这部分的代码按C语言的方式编译。
 
+#### 2. 说下sizeof和strlen的区别？
+
+对于char[]来说，sizeof得到的值比strlen得到的值大1；对于char*来说，sizeof得到的值往往为4或者8，而strlen得到的值与之前得到的值相同。
+
 ### Algorithms and Data Structures
 
 #### 1. 说说什么是哈希表？用在什么场景？
