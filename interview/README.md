@@ -273,6 +273,20 @@ bool HasSubtree(TreeNode *pRootA, TreeNode *pRootB) {
 }
 ```
 
+#### 3. [二叉树的镜像](https://www.nowcoder.com/questionTerminal/564f4c26aa584921bc75623e48ca3011)
+
+递归。
+
+```cpp
+void Mirror(TreeNode *pRoot) {
+    if (pRoot) {
+        swap(pRoot->left, pRoot->right);
+        Mirror(pRoot->left);
+        Mirror(pRoot->right);
+    }
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
