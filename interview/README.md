@@ -87,14 +87,40 @@ ListNode* reverseList(ListNode *pHead) {
 }
 ```
 
-### 4. Binary Tree
+### 4. Stack & Queue
+
+[Question 1](https://www.nowcoder.com/questionTerminal/54275ddae22f475981afa2244dd448c6)
+
+stack1作为入队列，stack2作为出队列。
+
+```cpp
+stack<int> stack1, stack2;
+void push(int node) {
+    stack1.push(node);
+}
+int pop() {
+    int node;
+    if (stack2.empty()) {
+        while (!stack1.empty()) {
+            node = stack1.top();
+            stack1.pop();
+            stack2.push(node);
+        }
+    }
+    node = stack2.top();
+    stack2.pop();
+    return node;
+}
+```
+
+### 5. Binary Tree
 
 [Question 1](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
 
 查找根节点并递归地构建左右子树。
 
 ```cpp
-TreeNode* reConstructBinaryTree(std::vector<int> pre, std::vector<int> in) {
+TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> in) {
     if (pre.empty()) {
         return nullptr;
     }
@@ -107,7 +133,7 @@ TreeNode* reConstructBinaryTree(std::vector<int> pre, std::vector<int> in) {
             break;
         }
     }
-    std::vector<int> left_pre, left_in, right_pre, right_in;
+    vector<int> left_pre, left_in, right_pre, right_in;
     // 构建左子树
     for (int i = 0; i < rootindex; ++i) {
         left_pre.push_back(pre[i + 1]);
