@@ -730,7 +730,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 
 ## Algorithms and Data Structures
 
-### Array
+### 1. Array
 
 [Question 1](https://www.nowcoder.com/questionTerminal/abc3fe2ce8e146608e868a70efebf62e)
 
@@ -752,7 +752,7 @@ bool Find(int target, vector<vector<int>> array) {
 }
 ```
 
-### Linked List
+### 2. Linked List
 
 [Question 1](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
@@ -773,7 +773,7 @@ ListNode* reverseList(ListNode *pHead) {
 }
 ```
 
-### Binary Tree
+### 3. Binary Tree
 
 [Question 1](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
 
