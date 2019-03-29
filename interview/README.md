@@ -28,19 +28,24 @@ bool Find(int target, vector<vector<int>> array) {
 
 #### 2. [旋转数组的最小数字](https://www.nowcoder.com/questionTerminal/9f3231a991af4f55b95579b44b7a01ba)
 
+二分查找。
+
 ```cpp
 int minNumberInRotateArray(vector<int> rotateArray) {
     int low = 0, high = rotateArray.size() - 1;
     while (low < high) {
         int mid = low + (high - low) / 2;
+        // [2, 3, 4, 5, 6]
         // 最小数字在mid的左边
         if (rotateArray[mid] < rotateArray[high]) {
             high = mid;
         }
+        // [4, 5, 6, 2, 3]
         // 最小数字在mid的右边
         else if (rotateArray[mid] > rotateArray[high]) {
             low = mid + 1;
         }
+        // [1, 0, 1, 1, 1] | [1, 1, 1, 0, 1]
         // 不确定
         else {
             ++low;
