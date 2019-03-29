@@ -241,6 +241,38 @@ TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> in) {
 }
 ```
 
+#### 2. [树的子结构](https://www.nowcoder.com/questionTerminal/6e196c44c7004d15b1610b9afca8bd88)
+
+递归。
+
+```cpp
+bool isBinA(TreeNode *pRootA, TreeNode *pRootB) {
+    if (pRootB == nullptr) {
+        return true;
+    }
+    if (pRootA == nullptr) {
+        return false;
+    }
+    if (pRootA->val == pRootB->val) {
+        return isBinA(pRootA->left, pRootB->left) && isBinA(pRootA->right, pRootB->right);
+    } else {
+        return false;
+    }
+}
+bool HasSubtree(TreeNode *pRootA, TreeNode *pRootB) {
+    bool flag = false;
+    if (pRootA != nullptr && pRootB != nullptr) {
+        flag = isBinA(pRootA, pRootB);
+        if (!flag) {
+            flag = HasSubtree(pRootA->left, pRootB);
+        }
+        if (!flag) {
+            flag = HasSubtree(pRootA->right, pRootB);
+        }
+    } return flag;
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
