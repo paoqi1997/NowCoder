@@ -268,15 +268,15 @@ int Fibonacci(int n) {
 略。
 
 ```cpp
-int jumpFloor(int number) {
-    if (number == 0) {
+int jumpFloor(int n) {
+    if (n == 0) {
         return 0;
-    } else if (number == 1) {
+    } else if (n == 1) {
         return 1;
-    } else if (number == 2) {
+    } else if (n == 2) {
         return 2;
     } else {
-        return jumpFloor(number - 1) + jumpFloor(number - 2);
+        return jumpFloor(n - 1) + jumpFloor(n - 2);
     }
 }
 ```
@@ -286,17 +286,17 @@ int jumpFloor(int number) {
 略。
 
 ```cpp
-int jumpFloorII(int number) {
-    if (number == 0) {
+int jumpFloorII(int n) {
+    if (n == 0) {
         return 0;
-    } else if (number == 1) {
+    } else if (n == 1) {
         return 1;
-    } else if (number == 2) {
+    } else if (n == 2) {
         return 2;
     } else {
         int cnt = 1;
-        for (int i = 1; i < number; ++i) {
-            cnt += jumpFloorII(number - i);
+        for (int i = 1; i < n; ++i) {
+            cnt += jumpFloorII(n - i);
         }
         return cnt;
     }
@@ -308,15 +308,15 @@ int jumpFloorII(int number) {
 与跳台阶原理相同，1级台阶对应1个2 * 1的小矩形，2级台阶对应2个2 * 1的小矩形，n级台阶对应n个2 * 1的小矩形，也就是1个2 * n的大矩形。
 
 ```cpp
-int rectCover(int number) {
-    if (number == 0) {
+int rectCover(int n) {
+    if (n == 0) {
         return 0;
-    } else if (number == 1) {
+    } else if (n == 1) {
         return 1;
-    } else if (number == 2) {
+    } else if (n == 2) {
         return 2;
     } else {
-        return jumpFloor(number - 1) + jumpFloor(number - 2);
+        return rectCover(n - 1) + rectCover(n - 2);
     }
 }
 ```
