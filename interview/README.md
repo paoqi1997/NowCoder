@@ -135,7 +135,7 @@ ListNode* FindKthToTail(ListNode *pListHead, unsigned int k) {
 
 #### 3. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
-利用头插法反转链表。
+头插法。
 
 ```cpp
 ListNode* ReverseList(ListNode *pHead) {
