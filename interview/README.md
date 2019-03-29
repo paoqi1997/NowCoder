@@ -54,6 +54,16 @@ int minNumberInRotateArray(vector<int> rotateArray) {
 }
 ```
 
+#### 3. [调整数组顺序使奇数位于偶数前面](https://www.nowcoder.com/questionTerminal/beb5aa231adc45b2a5dcc5b62c93f593)
+
+```cpp
+void reOrderArray(vector<int>& array) {
+    stable_sort(array.begin(), array.end(), [](int x, int y){
+        return x % 2 && !(y % 2);
+    });
+}
+```
+
 ### String
 
 #### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
@@ -273,5 +283,13 @@ int NumberOf1(int n) {
     } else {
         return bitset<32>(n).count();
     }
+}
+```
+
+#### 2. [数值的整数次方](https://www.nowcoder.com/questionTerminal/1a834e5e3e1a4b7ba251417554e07c00)
+
+```cpp
+double Power(double base, int exp) {
+    return pow(base, exp);
 }
 ```
