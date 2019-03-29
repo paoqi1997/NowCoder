@@ -138,9 +138,8 @@ ListNode* FindKthToTail(ListNode *pListHead, unsigned int k) {
 利用头插法反转链表。
 
 ```cpp
-ListNode* reverseList(ListNode *pHead) {
-    ListNode *p = pHead;
-    ListNode *head = nullptr;
+ListNode* ReverseList(ListNode *pHead) {
+    ListNode *p = pHead, *head = nullptr;
     // head <- p <- q
     while (p != nullptr) {
         ListNode *q = p->next;
