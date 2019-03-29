@@ -51,7 +51,24 @@ void replaceSpace(char *str, int length) {
 
 ### 3. Linked List
 
-[Question 1](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
+[Question 1](https://www.nowcoder.com/questionTerminal/d0267f7f55b3412ba93bd35cfa8e8035)
+
+略。
+
+```cpp
+vector<int> printListFromTailToHead(ListNode *head) {
+    ListNode *p = head;
+    vector<int> vec;
+    while (p != nullptr) {
+        vec.push_back(p->val);
+        p = p->next;
+    }
+    reverse(vec.begin(), vec.end());
+    return vec;
+}
+```
+
+[Question 2](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
 利用头插法反转链表。
 
