@@ -12,7 +12,19 @@
 
 #### 2. 说下sizeof和strlen的区别？
 
-对于char[]来说，sizeof得到的值比strlen得到的值大1；对于char*来说，sizeof得到的值往往为4或者8，而strlen得到的值与之前得到的值相同。
+```cpp
+char s1[] = {'a', 'b'};
+cout << sizeof(s1) << ' ' << strlen(s1) << endl; // 2 UB
+
+char s2[] = {'a', 'b', '\0'};
+cout << sizeof(s2) << ' ' << strlen(s2) << endl; // 3 2
+
+char s3[] = "ab";
+cout << sizeof(s3) << ' ' << strlen(s3) << endl; // 3 2
+
+char *s4 = "ab";
+cout << sizeof(s4) << ' ' << strlen(s4) << endl; // 4 2
+```
 
 ### Algorithms and Data Structures
 
