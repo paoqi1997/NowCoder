@@ -26,7 +26,30 @@ bool Find(int target, vector<vector<int>> array) {
 }
 ```
 
-### 2. Linked List
+### 2. String
+
+[Question 1](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
+
+略。
+
+```cpp
+void replaceSpace(char *str, int length) {
+    int i = 0, len = length;
+    while (str[i] != '\0') {
+        if (str[i] != ' ') {
+            ++i;
+        } else {
+            for (int j = len; j > i; --j) {
+                str[j + 2] = str[j];
+            }
+            str[i] = '%', str[i + 1] = '2', str[i + 2] = '0';
+            len += 2;
+        }
+    }
+}
+```
+
+### 3. Linked List
 
 [Question 1](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
@@ -47,7 +70,7 @@ ListNode* reverseList(ListNode *pHead) {
 }
 ```
 
-### 3. Binary Tree
+### 4. Binary Tree
 
 [Question 1](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
 
