@@ -1,6 +1,6 @@
 # Answers for NowCoder
 
-习题答案。
+试题答案。
 
 ## NetEase
 

@@ -4,7 +4,7 @@
 
 ## 1. [Written Examination](https://github.com/paoqi1997/NowCoder/tree/master/written_examination)
 
-暴力破解，一波带走！
+这波不亏。
 
 ## 2. [Interview](https://github.com/paoqi1997/NowCoder/tree/master/interview)
 
