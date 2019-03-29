@@ -88,7 +88,48 @@ A的虚表有2个指针，分别指向A::vfunc1和A::vfunc2，B的虚表也有�
 
 I/O复用就是构造一个我们感兴趣的描述符列表，然后调用某个函数，直到这些描述符中的某个描述符准备好进行I/O时，该函数才返回。
 
-#### 2. 
+#### 2. 说下进程间通信的方式？
+
++ 管道
+
+```cpp
+#include <unistd.h>
+
+int pipe(int fd[2]);
+```
+
++ 命名管道
+
+```cpp
+#include <sys/stat.h>
+
+int mkfifo(const char *path, mode_t mode);
+int mkfifoat(int fd, const char *path, mode_t mode);
+```
+
++ 消息队列
+
+```cpp
+#include <sys/msg.h>
+
+int msgget(key_t key, int flag);
+```
+
++ 信号量
+
+```cpp
+#include <sys/sem.h>
+
+int semget(key_t key, int nsems, int flag);
+```
+
+共享内存
+
+```cpp
+#include <sys/shm.h>
+
+int shmget(key_t key, size_t size, int flag);
+```
 
 ### Algorithms and Data Structures
 
