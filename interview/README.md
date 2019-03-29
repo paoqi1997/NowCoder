@@ -4,9 +4,9 @@
 
 ## Algorithms and Data Structures
 
-### 1. Array
+### Array
 
-[Question 1](https://www.nowcoder.com/questionTerminal/abc3fe2ce8e146608e868a70efebf62e)
+#### 1. [二维数组中的查找](https://www.nowcoder.com/questionTerminal/abc3fe2ce8e146608e868a70efebf62e)
 
 从左下角开始寻找，若target < array[row][col]，则在上方，若target > array[row][col]，则在右方。
 
@@ -26,9 +26,9 @@ bool Find(int target, vector<vector<int>> array) {
 }
 ```
 
-### 2. String
+### String
 
-[Question 1](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
+#### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
 
 略。
 
@@ -49,9 +49,9 @@ void replaceSpace(char *str, int length) {
 }
 ```
 
-### 3. Linked List
+### Linked List
 
-[Question 1](https://www.nowcoder.com/questionTerminal/d0267f7f55b3412ba93bd35cfa8e8035)
+#### 1. [从尾到头打印链表](https://www.nowcoder.com/questionTerminal/d0267f7f55b3412ba93bd35cfa8e8035)
 
 略。
 
@@ -68,7 +68,7 @@ vector<int> printListFromTailToHead(ListNode *head) {
 }
 ```
 
-[Question 2](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
+#### 2. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
 利用头插法反转链表。
 
@@ -87,9 +87,9 @@ ListNode* reverseList(ListNode *pHead) {
 }
 ```
 
-### 4. Stack & Queue
+### Stack & Queue
 
-[Question 1](https://www.nowcoder.com/questionTerminal/54275ddae22f475981afa2244dd448c6)
+#### 1. [用两个栈实现队列](https://www.nowcoder.com/questionTerminal/54275ddae22f475981afa2244dd448c6)
 
 stack1作为入队列，stack2作为出队列。
 
@@ -113,9 +113,9 @@ int pop() {
 }
 ```
 
-### 5. Binary Tree
+### Binary Tree
 
-[Question 1](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
+#### 1. [重建二叉树](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
 
 查找根节点并递归地构建左右子树。
 
