@@ -1,6 +1,6 @@
-# NowCoder
+# C++ Backend on NowCoder
 
-笔试及面试题目总结（C++ Backend）。
+笔试及面试题目总结。
 
 ## 1. [Written Examination](https://github.com/paoqi1997/NowCoder/tree/master/written_examination)
 
