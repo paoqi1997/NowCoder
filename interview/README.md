@@ -56,6 +56,8 @@ int minNumberInRotateArray(vector<int> rotateArray) {
 
 #### 3. [调整数组顺序使奇数位于偶数前面](https://www.nowcoder.com/questionTerminal/beb5aa231adc45b2a5dcc5b62c93f593)
 
+略。
+
 ```cpp
 void reOrderArray(vector<int>& array) {
     stable_sort(array.begin(), array.end(), [](int x, int y){
@@ -106,7 +108,32 @@ vector<int> printListFromTailToHead(ListNode *head) {
 }
 ```
 
-#### 2. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
+#### 2. [链表中倒数第k个结点](https://www.nowcoder.com/questionTerminal/529d3ae5a407492994ad2a246518148a)
+
+快慢指针。
+
+```cpp
+ListNode* FindKthToTail(ListNode *pListHead, unsigned int k) {
+    if (pListHead == nullptr || k == 0) {
+        return nullptr;
+    }
+    ListNode *p = pListHead, *q = pListHead;
+    for (int i = 1; i < k; ++i) {
+        if (p->next != nullptr) {
+            p = p->next;
+        } else {
+            return nullptr;
+        }
+    }
+    while (p->next != nullptr) {
+        p = p->next;
+        q = q->next;
+    }
+    return q;
+}
+```
+
+#### 3. [反转链表](https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca)
 
 利用头插法反转链表。
 
@@ -193,6 +220,8 @@ TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> in) {
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
 
+略。
+
 ```cpp
 int Fibonacci(int n) {
     if (n == 0 || n == 1) {
@@ -210,6 +239,8 @@ int Fibonacci(int n) {
 
 #### 2. [跳台阶](https://www.nowcoder.com/questionTerminal/8c82a5b80378478f9484d87d1c5f12a4)
 
+略。
+
 ```cpp
 int jumpFloor(int number) {
     if (number == 0) {
@@ -225,6 +256,8 @@ int jumpFloor(int number) {
 ```
 
 #### 3. [变态跳台阶](https://www.nowcoder.com/questionTerminal/22243d016f6b47f2a6928b4313c85387)
+
+略。
 
 ```cpp
 int jumpFloorII(int number) {
@@ -266,6 +299,8 @@ int rectCover(int number) {
 
 #### 1. [二进制中1的个数](https://www.nowcoder.com/questionTerminal/8ee967e43c2c4ec193b040ea7fbb10b8)
 
+略。
+
 ```cpp
 int NumberOf1(int n) {
     if (true) {
@@ -287,6 +322,8 @@ int NumberOf1(int n) {
 ```
 
 #### 2. [数值的整数次方](https://www.nowcoder.com/questionTerminal/1a834e5e3e1a4b7ba251417554e07c00)
+
+略。
 
 ```cpp
 double Power(double base, int exp) {
