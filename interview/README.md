@@ -178,3 +178,100 @@ TreeNode* reConstructBinaryTree(vector<int> pre, vector<int> in) {
     return root;
 }
 ```
+
+### Recursion
+
+#### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
+
+```cpp
+int Fibonacci(int n) {
+    if (n == 0 || n == 1) {
+        return n;
+    } else {
+        int n1 = 0, n2 = 1, n3;
+        for (int i = 2; i <= n; ++i) {
+            n3 = n1 + n2;
+            n1 = n2, n2 = n3;
+        }
+        return n3;
+    }
+}
+```
+
+#### 2. [跳台阶](https://www.nowcoder.com/questionTerminal/8c82a5b80378478f9484d87d1c5f12a4)
+
+```cpp
+int jumpFloor(int number) {
+    if (number == 0) {
+        return 0;
+    } else if (number == 1) {
+        return 1;
+    } else if (number == 2) {
+        return 2;
+    } else {
+        return jumpFloor(number - 1) + jumpFloor(number - 2);
+    }
+}
+```
+
+#### 3. [变态跳台阶](https://www.nowcoder.com/questionTerminal/22243d016f6b47f2a6928b4313c85387)
+
+```cpp
+int jumpFloorII(int number) {
+    if (number == 0) {
+        return 0;
+    } else if (number == 1) {
+        return 1;
+    } else if (number == 2) {
+        return 2;
+    } else {
+        int cnt = 1;
+        for (int i = 1; i < number; ++i) {
+            cnt += jumpFloorII(number - i);
+        }
+        return cnt;
+    }
+}
+```
+
+#### 4. [矩形覆盖](https://www.nowcoder.com/questionTerminal/72a5a919508a4251859fb2cfb987a0e6)
+
+与跳台阶原理相同，1级台阶对应1个2 * 1的小矩形，2级台阶对应2个2 * 1的小矩形，n级台阶对应n个2 * 1的小矩形，也就是1个2 * n的大矩形。
+
+```cpp
+int rectCover(int number) {
+    if (number == 0) {
+        return 0;
+    } else if (number == 1) {
+        return 1;
+    } else if (number == 2) {
+        return 2;
+    } else {
+        return jumpFloor(number - 1) + jumpFloor(number - 2);
+    }
+}
+```
+
+### Details
+
+#### 1. [二进制中1的个数](https://www.nowcoder.com/questionTerminal/8ee967e43c2c4ec193b040ea7fbb10b8)
+
+```cpp
+int NumberOf1(int n) {
+    if (true) {
+        int cnt = 0;
+        while (n) {
+            // 15
+            // 1111 & 1110 -> 1110
+            // 1110 & 1101 -> 1100
+            // 1100 & 1001 -> 1000
+            // 1000 & 0111 -> 0000
+            n &= n - 1;
+            ++cnt;
+        }
+        return cnt;
+    } else {
+        return bitset<32>(n).count();
+    }
+}
+```
