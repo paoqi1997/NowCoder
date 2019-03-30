@@ -185,6 +185,34 @@ int shmget(key_t key, size_t size, int flag);
 
     交换根节点与最后一个叶子节点的值，使末尾值最大，随后重新调整堆。
 
+#### 4. 怎么逆序打印链表？
+
+如下。
+
+```cpp
+template <typename T>
+struct ListNode {
+    T val;
+    ListNode *next;
+    ListNode(const T& _val) : val(_val), next(nullptr) {}
+};
+template <typename T>
+void printListFromTailToHead(ListNode<T> *head) {
+    if (head != nullptr) {
+        printListFromTailToHead(head->next);
+        cout << head->val << ' ' << endl;
+    }
+}
+int main() {
+    ListNode<int> *head = new ListNode<int>(1);
+    head->next = new ListNode<int>(2);
+    printListFromTailToHead(head);
+    delete head->next;
+    delete head;
+    return 0;
+}
+```
+
 ## Code
 
 ### Array
