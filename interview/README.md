@@ -133,7 +133,7 @@ int shmget(key_t key, size_t size, int flag);
 
 ### Computer Network
 
-#### 1. 为什么是三次握手而不是两次或四次？
+#### 1. 为什么是三次握手而不是四次或两次？
 
 四次握手的过程如下：
 
@@ -155,9 +155,9 @@ int shmget(key_t key, size_t size, int flag);
 
 2. 主机B向A发送一个ACK，再发送一个SYN。
 
-如果A向B发送的SYN并没有丢失，而是延误到连接释放后的某个时间才到达B，B在收到这个SYN后，误以为A又发起连接请求，于是向A发送一个ACK，表示可以建立连接。如果没有第三次握手，新的连接就建立了。实际上A并没有发起连接请求，而B却在等待A发送数据，B的资源就这样被浪费了。
+如果A向B发送的SYN并没有丢失，而是延误到连接释放后的某个时间才到达B，B在收到这个SYN后，误以为A又发起连接请求，于是向A发送一个ACK，表示同意建立连接。如果没有第三次握手，新的连接就建立了。实际上A并没有发起连接请求，而B却在等待A发送数据，B的资源就这样被浪费了。
 
-如果加入第三次握手，就可以避免上述问题，A不会就B的ACK向B发送ACK，由于B没收到ACK，也就知道A并没有发起连接请求。
+如果加入第三次握手，就可以避免上述问题，A不会就B发过来的ACK向B发送ACK，由于B没收到ACK，也就知道A并没有发起连接请求。
 
 ### Algorithms and Data Structures
 
@@ -189,7 +189,7 @@ int shmget(key_t key, size_t size, int flag);
 
 #### 4. 怎么逆序打印链表？
 
-如下。
+递归的方式如下。
 
 ```cpp
 template <typename T>
@@ -202,7 +202,7 @@ template <typename T>
 void printListFromTailToHead(ListNode<T> *head) {
     if (head != nullptr) {
         printListFromTailToHead(head->next);
-        cout << head->val << ' ' << endl;
+        cout << head->val << endl;
     }
 }
 int main() {
