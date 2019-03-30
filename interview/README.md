@@ -155,7 +155,9 @@ int shmget(key_t key, size_t size, int flag);
 
 2. 主机B向A发送一个ACK，再发送一个SYN。
 
-这里B无法知道A是否收到自己发送的SYN，如果这个SYN丢失了，那么A和B的序列号将无法达成一致。
+如果A向B发送的SYN并没有丢失，而是延误到连接释放后的某个时间才到达B，B在收到这个SYN后，误以为A又发起连接请求，于是向A发送一个ACK，表示可以建立连接。如果没有第三次握手，新的连接就建立了。实际上A并没有发起连接请求，而B却在等待A发送数据，B的资源就这样被浪费了。
+
+如果加入第三次握手，就可以避免上述问题，A不会就B的ACK向B发送ACK，由于B没收到ACK，也就知道A并没有发起连接请求。
 
 ### Algorithms and Data Structures
 
