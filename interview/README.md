@@ -131,6 +131,32 @@ int semget(key_t key, int nsems, int flag);
 int shmget(key_t key, size_t size, int flag);
 ```
 
+### Computer Network
+
+#### 1. 为什么是三次握手而不是两次或四次？
+
+四次握手的过程如下：
+
+1. 主机A向B发送一个SYN。
+
+2. 主机B向A发送一个ACK。
+
+3. 主机B向A发送一个SYN。
+
+4. 主机A向B发送一个ACK。
+
+这里的2和3可以合并成一个步骤，故三次握手即可。
+
+在三次握手中，第一次握手后，B知道A能发，第二次握手后，A知道B能收和发，第三次握手后，B知道A能收。
+
+两次握手的过程如下：
+
+1. 主机A向B发送一个SYN。
+
+2. 主机B向A发送一个ACK，再发送一个SYN。
+
+这里B无法知道A是否收到自己发送的SYN，如果这个SYN丢失了，那么A和B的序列号将无法达成一致。
+
 ### Algorithms and Data Structures
 
 #### 1. 说说什么是哈希表？用在什么场景？
