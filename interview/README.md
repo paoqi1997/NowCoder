@@ -90,19 +90,17 @@ I/O复用就是构造一个我们感兴趣的描述符列表，然后调用某�
 
 #### 2. 说下进程间通信的方式？
 
-+ 管道
++ 管道（只能在具有公共祖先的两个进程之间使用）
 
 ```cpp
 #include <unistd.h>
-
 int pipe(int fd[2]);
 ```
 
-+ 命名管道
++ 命名管道（通过FIFO，不相关的进程也能交换数据）
 
 ```cpp
 #include <sys/stat.h>
-
 int mkfifo(const char *path, mode_t mode);
 int mkfifoat(int fd, const char *path, mode_t mode);
 ```
@@ -111,24 +109,29 @@ int mkfifoat(int fd, const char *path, mode_t mode);
 
 ```cpp
 #include <sys/msg.h>
-
 int msgget(key_t key, int flag);
+int msgctl(int msqid, int cmd, struct msqid_ds *buf);
+int msgsnd(int msqid, const void *ptr, size_t nbytes, int flag);
+ssize_t msgrcv(int msqid, void *ptr, size_t nbytes, long type, int flag);
 ```
 
 + 信号量
 
 ```cpp
 #include <sys/sem.h>
-
 int semget(key_t key, int nsems, int flag);
+int semctl(int semid, int semnum, int cmd, ...);
+int semop(int semid, struct sembuf semoparray[], size_t npos);
 ```
 
 共享内存
 
 ```cpp
 #include <sys/shm.h>
-
 int shmget(key_t key, size_t size, int flag);
+int shmctl(int shmid, int cmd, struct shmid_ds *buf);
+void* shmat(int shmid, const void *addr, int flag);
+int shmdt(const void *addr);
 ```
 
 ### Computer Network
