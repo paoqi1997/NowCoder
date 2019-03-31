@@ -124,7 +124,7 @@ int semctl(int semid, int semnum, int cmd, ...);
 int semop(int semid, struct sembuf semoparray[], size_t npos);
 ```
 
-共享内存
++ 共享内存
 
 ```cpp
 #include <sys/shm.h>
