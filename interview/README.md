@@ -301,14 +301,14 @@ vector<int> printMatrix(vector<vector<int>> matrix) {
         for (int _row = i + 1; _row < row - i; ++_row) {
             vec.push_back(matrix[_row][col - i - 1]);
         }
-        // 下方
         if (i < row - i - 1) {
+            // 下方
             for (int _col = col - i - 2; _col >= i; --_col) {
                 vec.push_back(matrix[row - i - 1][_col]);
             }
         }
-        // 左方
         if (i < col - i - 1) {
+            // 左方
             for (int _row = row - i - 2; _row >= i + 1; --_row) {
                 vec.push_back(matrix[_row][i]);
             }
