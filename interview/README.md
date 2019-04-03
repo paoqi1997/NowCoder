@@ -282,6 +282,41 @@ void reOrderArray(vector<int>& array) {
 }
 ```
 
+#### 4. [顺时针打印矩阵](https://www.nowcoder.com/questionTerminal/9b4c81a02cd34f76be2659fa0d54342a)
+
+略。
+
+```cpp
+vector<int> printMatrix(vector<vector<int>> matrix) {
+    int row = matrix.size();
+    int col = matrix[0].size();
+    vector<int> vec;
+    int circle = (min(row, col) + 1) / 2;
+    for (int i = 0; i < circle; ++i) {
+        // 上方
+        for (int _col = i; _col < col - i; ++_col) {
+            vec.push_back(matrix[i][_col]);
+        }
+        // 右方
+        for (int _row = i + 1; _row < row - i; ++_row) {
+            vec.push_back(matrix[_row][col - i - 1]);
+        }
+        // 下方
+        if (i < row - i - 1) {
+            for (int _col = col - i - 2; _col >= i; --_col) {
+                vec.push_back(matrix[row - i - 1][_col]);
+            }
+        }
+        // 左方
+        if (i < col - i - 1) {
+            for (int _row = row - i - 2; _row >= i + 1; --_row) {
+                vec.push_back(matrix[_row][i]);
+            }
+        }
+    } return vec;
+}
+```
+
 ### String
 
 #### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
