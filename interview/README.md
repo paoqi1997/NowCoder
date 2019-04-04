@@ -454,6 +454,36 @@ int pop() {
 }
 ```
 
+#### 2. [包含min函数的栈](https://www.nowcoder.com/questionTerminal/4c776177d2c04c2494f2555c9fcc1e49)
+
+引入stack2作为监视最小值的栈。
+
+```cpp
+class Solution {
+public:
+    void push(int value) {
+        stack1.push(value);
+        if (stack2.empty() || stack1.top() < stack2.top()) {
+            stack2.push(value);
+        }
+    }
+    void pop() {
+        if (stack1.top() == stack2.top()) {
+            stack2.pop();
+        }
+        stack1.pop();
+    }
+    int top() {
+        return stack1.top();
+    }
+    int min() {
+        return stack2.top();
+    }
+private:
+    stack<int> stack1, stack2;
+};
+```
+
 ### Binary Tree
 
 #### 1. [重建二叉树](https://www.nowcoder.com/questionTerminal/8a19cbe657394eeaac2f6ea9b0f6fcf6)
