@@ -190,6 +190,34 @@ int shmdt(const void *addr);
 
     交换根节点与最后一个叶子节点的值，使末尾值最大，随后重新调整堆。
 
+参考实现如下：
+
+```cpp
+void hs(int m[], int rootIndex, int n) {
+    int rootVal = m[rootIndex], leafIndex = 2 * rootIndex + 1;
+    while (leafIndex < n) {
+        if (leafIndex + 1 < n && m[leafIndex] < m[leafIndex + 1]) {
+            ++leafIndex;
+        }
+        if (rootVal < m[leafIndex]) {
+            m[rootIndex] = m[leafIndex];
+            rootIndex = leafIndex, leafIndex = 2 * rootIndex + 1;
+        } else {
+            break;
+        }
+    } m[rootIndex] = rootVal;
+}
+void heapsort(int m[], int n) {
+    for (int i = n / 2 - 1; i >= 0; --i) {
+        hs(m, i, n);
+    }
+    for (int i = 1; i < n; ++i) {
+        swap(m[0], m[n - i]);
+        hs(m, 0, n - i);
+    }
+}
+```
+
 #### 4. 怎么逆序打印链表？
 
 递归的方式如下。
