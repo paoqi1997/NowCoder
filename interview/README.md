@@ -246,11 +246,11 @@ int main() {
 }
 ```
 
-#### 5. 说下快速排序的原理？怎么利用快排思想寻找数组中第K大的数？
+#### 5. 说下快速排序的原理？怎么利用快排思想找出数组中第K大的数？
 
 假设为升序排序：
 
-    从m[l, r]中选择一个元素作为基准元素，然后设置两个哨兵，其索引分别为l和r，在l和r相遇之前，哨兵l对应的值都不大于基准元素，哨兵r对应的值都不小于基准元素，否则交换这两个值。
+    从m[l, r]中选择m[l]/m[r]作为基准元素，然后设置两个哨兵，其索引分别为l和r，在l和r相遇之前，哨兵l对应的值都不大于基准元素，哨兵r对应的值都不小于基准元素，否则交换这两个值，随后返回l/r作为基准元素的索引。
 
     将[left, index - 1]记为左段，将[index + 1, right]记为右段，对左段及右段进行递归快速排序。
 
@@ -268,13 +268,43 @@ int qs(int m[], int l, int r) {
         }
         swap(m[l], m[r]);
     }
-    return l;
+    return r;
 }
 void quicksort(int m[], int left, int right) {
     if (left < right) {
         int index = qs(m, left, right);
         quicksort(m, left, index - 1);
         quicksort(m, index + 1, right);
+    }
+}
+```
+
+稍作修改即可利用快排思想找出数组中第k大的数。
+
+```cpp
+int fkm(int m[], int l, int r) {
+    int tmpVal = m[l];
+    while (l < r) {
+        while (l < r && m[l] > tmpVal) {
+            ++l;
+        }
+        while (l < r && tmpVal > m[r]) {
+            --r;
+        }
+        swap(m[l], m[r]);
+    }
+    return r;
+}
+int find_k_max(int m[], int left, int right, int k) {
+    if (left < right) {
+        int index = fkm(m, left, right);
+        if (k - 1 == index) {
+            return m[k - 1];
+        } else if (k - 1 < index) {
+            find_k_max(m, left, index - 1, k);
+        } else {
+            find_k_max(m, index + 1, right, k);
+        }
     }
 }
 ```
