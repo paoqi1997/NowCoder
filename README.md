@@ -4,8 +4,8 @@
 
 ## 1. [Written Examination](https://github.com/paoqi1997/NowCoder/tree/master/written_examination)
 
-这波不亏。
+你也太菜了吧！
 
 ## 2. [Interview](https://github.com/paoqi1997/NowCoder/tree/master/interview)
 
-你有什么要问的吗？
+请回吧。
