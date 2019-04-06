@@ -587,7 +587,7 @@ private:
 // pushV -> 1 2 3 4 5
 //  popV -> 4 5 3 2 1 (true)
 //       -> 4 3 5 1 2 (false)
-bool isPopOrder(vector<int> pushV, vector<int> popV) {
+bool IsPopOrder(vector<int> pushV, vector<int> popV) {
     if (pushV.empty()) {
         return false;
     }
