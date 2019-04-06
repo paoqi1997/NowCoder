@@ -686,6 +686,32 @@ void Mirror(TreeNode *pRoot) {
 }
 ```
 
+#### 4. [从上往下打印二叉树](https://www.nowcoder.com/questionTerminal/7fe2212963db4790b57431d9ed259701)
+
+层次遍历。
+
+```cpp
+vector<int> PrintFromTopToBottom(TreeNode *root) {
+    vector<int> pool;
+    queue<TreeNode*> nodes;
+    while (root) {
+        pool.push_back(root->val);
+        if (root->left) {
+            nodes.push(root->left);
+        }
+        if (root->right) {
+            nodes.push(root->right);
+        }
+        if (nodes.empty()) {
+            break;
+        } else {
+            root = nodes.front();
+            nodes.pop();
+        }
+    } return pool;
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
