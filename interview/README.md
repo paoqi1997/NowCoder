@@ -530,23 +530,34 @@ RandomListNode* Clone(RandomListNode *pHead) {
     } else {
         auto p = pHead;
         while (p) {
-            auto copy = new RandomListNode(p->label);
-            auto q = p->next;
-            p->next = copy;
-            copy->next = q;
-            p = q;
+            // 复制节点并将新的节点链接到原来的节点的后面
+            // p -> pp
+            // p -> cloneNode -> pp
+            auto pp = p->next;
+            auto cloneNode = new RandomListNode(p->label);
+            p->next = cloneNode;
+            cloneNode->next = pp;
+            p = pp;
         }
         p = pHead;
         while (p) {
-            p->next->random = p->random == nullptr ? nullptr : p->random->next;
+            // 为新的节点设置random
+            // p ---> p->next ---> p->next->next
+            if (p->random) {
+                p->next->random = p->random->next;
+            }
             p = p->next->next;
         }
         p = pHead;
         auto head = pHead->next;
         while (p) {
-            auto copy = p->next;
-            p->next = copy->next;
-            copy->next = copy->next == nullptr ? nullptr : copy->next->next;
+            // 拆分链表
+            // p ---> p->next(cloneNode) ---> cloneNode->next
+            auto cloneNode = p->next;
+            p->next = cloneNode->next;
+            if (cloneNode->next) {
+                cloneNode->next = cloneNode->next->next;
+            }
             p = p->next;
         }
         return head;
