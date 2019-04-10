@@ -519,6 +519,41 @@ ListNode* Merge(ListNode *pHead1, ListNode *pHead2) {
 }
 ```
 
+#### 5. [复杂链表的复制](https://www.nowcoder.com/questionTerminal/f836b2c43afc4b35ad6adc41ec941dba)
+
+略。
+
+```cpp
+RandomListNode* Clone(RandomListNode *pHead) {
+    if (pHead == nullptr) {
+        return pHead;
+    } else {
+        auto p = pHead;
+        while (p) {
+            auto copy = new RandomListNode(p->label);
+            auto q = p->next;
+            p->next = copy;
+            copy->next = q;
+            p = q;
+        }
+        p = pHead;
+        while (p) {
+            p->next->random = p->random == nullptr ? nullptr : p->random->next;
+            p = p->next->next;
+        }
+        p = pHead;
+        auto head = pHead->next;
+        while (p) {
+            auto copy = p->next;
+            p->next = copy->next;
+            copy->next = copy->next == nullptr ? nullptr : copy->next->next;
+            p = p->next;
+        }
+        return head;
+    }
+}
+```
+
 ### Stack & Queue
 
 #### 1. [用两个栈实现队列](https://www.nowcoder.com/questionTerminal/54275ddae22f475981afa2244dd448c6)
