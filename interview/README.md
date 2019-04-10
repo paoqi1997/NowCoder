@@ -736,6 +736,36 @@ bool VerifySquenceOfBST(vector<int> sequence) {
 }
 ```
 
+#### 6. [二叉树中和为某一值的路径](https://www.nowcoder.com/questionTerminal/b736e784e3e34731af99065031301bca)
+
+深搜。
+
+```cpp
+void dfs(TreeNode *root, int expectNumber, vector<vector<int>>& box, vector<int>& path) {
+    path.push_back(root->val);
+    if (!root->left && !root->right) {
+        if (root->val == expectNumber) {
+            box.push_back(path);
+        }
+    }
+    if (root->left) {
+        dfs(root->left, expectNumber - root->val, box, path);
+    }
+    if (root->right) {
+        dfs(root->right, expectNumber - root->val, box, path);
+    }
+    path.pop_back();
+}
+vector<vector<int>> FindPath(TreeNode *root, int expectNumber) {
+    vector<vector<int>> box;
+    vector<int> path;
+    if (root) {
+        dfs(root, expectNumber, box, path);
+    }
+    return box;
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
