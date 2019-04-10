@@ -770,9 +770,9 @@ bool VerifySquenceOfBST(vector<int> sequence) {
         int rootIndex = sequence.size() - 1;
         while (rootIndex) {
             int i = 0;
-            while (sequence[i++] < sequence[rootIndex]);
-            while (sequence[i++] > sequence[rootIndex]);
-            if (i >= rootIndex) {
+            while (sequence[i] < sequence[rootIndex]) ++i;
+            while (sequence[i] > sequence[rootIndex]) ++i;
+            if (i == rootIndex) {
                 --rootIndex;
             } else {
                 return false;
