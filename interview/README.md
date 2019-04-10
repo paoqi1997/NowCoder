@@ -714,7 +714,7 @@ vector<int> PrintFromTopToBottom(TreeNode *root) {
 
 #### 5. [二叉搜索树的后序遍历序列](https://www.nowcoder.com/questionTerminal/a861533d45854474ac791d90e447bafd)
 
-对于二叉搜索树的后序遍历序列来说，最后一个元素对应于根节点，前面的元素分为两部分，第一部分的元素均小于最后一个元素，第二部分的元素均大于最后一个元素。
+对于二叉搜索树的后序遍历序列来说，最后一个元素对应于根节点，前面的元素分为两部分，第一部分的元素均小于根节点，第二部分的元素均大于根节点。
 
 ```cpp
 bool VerifySquenceOfBST(vector<int> sequence) {
