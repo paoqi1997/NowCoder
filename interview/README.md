@@ -721,15 +721,15 @@ bool VerifySquenceOfBST(vector<int> sequence) {
     if (sequence.empty()) {
         return false;
     } else {
-        int index = sequence.size() - 1;
-        while (index) {
+        int rootIndex = sequence.size() - 1;
+        while (rootIndex) {
             int i = 0;
-            while (sequence[i++] < sequence[index]);
-            while (sequence[i++] > sequence[index]);
-            if (i < index) {
-                return false;
+            while (sequence[i++] < sequence[rootIndex]);
+            while (sequence[i++] > sequence[rootIndex]);
+            if (i >= rootIndex) {
+                --rootIndex;
             } else {
-                --index;
+                return false;
             }
         } return true;
     }
