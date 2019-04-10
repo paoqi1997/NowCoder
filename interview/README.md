@@ -712,6 +712,30 @@ vector<int> PrintFromTopToBottom(TreeNode *root) {
 }
 ```
 
+#### 5. [二叉搜索树的后序遍历序列](https://www.nowcoder.com/questionTerminal/a861533d45854474ac791d90e447bafd)
+
+对于二叉搜索树的后序遍历序列来说，最后一个元素对应于根节点，前面的元素分为两部分，第一部分的元素均小于最后一个元素，第二部分的元素均大于最后一个元素。
+
+```cpp
+bool VerifySquenceOfBST(vector<int> sequence) {
+    if (sequence.empty()) {
+        return false;
+    } else {
+        int index = sequence.size() - 1;
+        while (index) {
+            int i = 0;
+            while (sequence[i++] < sequence[index]);
+            while (sequence[i++] > sequence[index]);
+            if (i < index) {
+                return false;
+            } else {
+                --index;
+            }
+        } return true;
+    }
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
