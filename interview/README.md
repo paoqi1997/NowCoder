@@ -754,6 +754,7 @@ void dfs(TreeNode *root, int expectNumber, vector<vector<int>>& box, vector<int>
     if (root->right) {
         dfs(root->right, expectNumber - root->val, box, path);
     }
+    // 回溯
     path.pop_back();
 }
 vector<vector<int>> FindPath(TreeNode *root, int expectNumber) {
