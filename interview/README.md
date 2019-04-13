@@ -813,6 +813,41 @@ vector<vector<int>> FindPath(TreeNode *root, int expectNumber) {
 }
 ```
 
+#### 7. [二叉搜索树与双向链表](https://www.nowcoder.com/questionTerminal/947f6eb80d944a84850b0538bf0ec3a5)
+
+递归。
+
+```cpp
+void implConvert(TreeNode*& prev, TreeNode *curr) {
+    if (curr) {
+        // inorder(p->left);
+        // ...
+        // inorder(p->right);
+        implConvert(prev, curr->left);
+        curr->left = prev;
+        if (prev) {
+            prev->right = curr;
+        }
+        // 修改prev本身
+        prev = curr;
+        implConvert(prev, curr->right);
+    }
+}
+TreeNode* Convert(TreeNode *pRootOfTree) {
+    if (pRootOfTree == nullptr) {
+        return nullptr;
+    } else {
+        TreeNode *prev = nullptr;
+        implConvert(prev, pRootOfTree);
+        TreeNode *head = pRootOfTree;
+        while (head->left) {
+            head = head->left;
+        }
+        return head;
+    }
+}
+```
+
 ### Recursion
 
 #### 1. [斐波那契数列](https://www.nowcoder.com/questionTerminal/c6c7742f5ba7442aada113136ddea0c3)
