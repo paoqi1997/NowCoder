@@ -440,22 +440,25 @@ void implPermutation(vector<string>& box, string s, int index) {
     if (index == s.length() - 1) {
         if (find(box.begin(), box.end(), s) == box.end()) {
             box.push_back(s);
+            // cout << s << endl;
         }
     } else {
         for (size_t i = index; i < s.length(); ++i) {
-            // 1 2 3 4 5
-            // s[3] - s[4]
-            // 1 2 3 5 4
-            // s[2] - s[3]
-            //   s[3] - s[4]
-            // 1 2 4 3 5
-            // 1 2 4 5 3
-            // s[2] - s[4]
-            //   s[3] - s[4]
-            // 1 2 5 3 4
-            // 1 2 5 4 3
+            // [00] [11] [22] [33]
+            // 12345
+            // [34]
+            // 12354
+            // [23] [33]
+            // 12435
+            // [34]
+            // 12453
+            // [24] [33]
+            // 12543
+            // [34]
+            // 12534
             // ...
             swap(s[index], s[i]);
+            // cout << index << ' ' << i << endl;
             implPermutation(box, s, index + 1);
             swap(s[index], s[i]);
         }
