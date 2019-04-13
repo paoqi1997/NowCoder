@@ -408,6 +408,42 @@ vector<int> printMatrix(vector<vector<int>> matrix) {
 }
 ```
 
+#### 5. [数组中出现次数超过一半的数字](https://www.nowcoder.com/questionTerminal/e8a1b01a2df14cb2b228b30ee6a92163)
+
+略。
+
+```cpp
+int MoreThanHalfNum_Solution(vector<int> numbers) {
+    if (numbers.empty()) {
+        return 0;
+    } else {
+        int num = numbers[0], cnt = 1;
+        for (size_t i = 1; i < numbers.size(); ++i) {
+            if (numbers[i] == num) {
+                ++cnt;
+            } else {
+                --cnt;
+            }
+            if (cnt == 0) {
+                num = numbers[i];
+                cnt = 1;
+            }
+        }
+        cnt = 0;
+        for (auto ele : numbers) {
+            if (ele == num) {
+                ++cnt;
+            }
+        }
+        if (cnt > numbers.size() / 2) {
+            return num;
+        } else {
+            return 0;
+        }
+    }
+}
+```
+
 ### String
 
 #### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
