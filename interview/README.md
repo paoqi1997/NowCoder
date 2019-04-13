@@ -431,6 +431,34 @@ void replaceSpace(char *str, int length) {
 }
 ```
 
+#### 2. [字符串的排列](https://www.nowcoder.com/questionTerminal/fe6b651b66ae47d7acce78ffdd9a96c7)
+
+递归。
+
+```cpp
+void implPermutation(vector<string>& box, string s, int index) {
+    if (index == s.length() - 1) {
+        if (find(box.begin(), box.end(), s) == box.end()) {
+            box.push_back(s);
+        }
+    } else {
+        for (size_t i = index; i < s.length(); ++i) {
+            swap(s[index], s[i]);
+            implPermutation(box, s, index + 1);
+            swap(s[index], s[i]);
+        }
+    }
+}
+vector<string> Permutation(string s) {
+    vector<string> box;
+    if (!s.empty()) {
+        implPermutation(box, s, 0);
+        sort(box.begin(), box.end());
+    }
+    return box;
+}
+```
+
 ### Linked List
 
 #### 1. [从尾到头打印链表](https://www.nowcoder.com/questionTerminal/d0267f7f55b3412ba93bd35cfa8e8035)
