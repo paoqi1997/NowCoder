@@ -443,6 +443,18 @@ void implPermutation(vector<string>& box, string s, int index) {
         }
     } else {
         for (size_t i = index; i < s.length(); ++i) {
+            // 1 2 3 4 5
+            // s[3] - s[4]
+            // 1 2 3 5 4
+            // s[2] - s[3]
+            //   s[3] - s[4]
+            // 1 2 4 3 5
+            // 1 2 4 5 3
+            // s[2] - s[4]
+            //   s[3] - s[4]
+            // 1 2 5 3 4
+            // 1 2 5 4 3
+            // ...
             swap(s[index], s[i]);
             implPermutation(box, s, index + 1);
             swap(s[index], s[i]);
