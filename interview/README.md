@@ -824,10 +824,10 @@ void implConvert(TreeNode*& prev, TreeNode *curr) {
         // ...
         // inorder(p->right);
         implConvert(prev, curr->left);
-        curr->left = prev;
         if (prev) {
             prev->right = curr;
         }
+        curr->left = prev;
         // 修改prev本身
         prev = curr;
         implConvert(prev, curr->right);
