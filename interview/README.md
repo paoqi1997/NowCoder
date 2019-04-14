@@ -263,7 +263,7 @@ int qs(int m[], int l, int r) {
         while (l < r && m[l] < tmpVal) {
             ++l;
         }
-        while (l < r && tmpVal < m[r]) {
+        while (l < r && m[r] > tmpVal) {
             --r;
         }
         swap(m[l], m[r]);
@@ -288,7 +288,7 @@ int fkm(int m[], int l, int r) {
         while (l < r && m[l] > tmpVal) {
             ++l;
         }
-        while (l < r && tmpVal > m[r]) {
+        while (l < r && m[r] < tmpVal) {
             --r;
         }
         swap(m[l], m[r]);
@@ -301,9 +301,9 @@ int find_k_max(int m[], int left, int right, int k) {
         if (k - 1 == index) {
             return m[k - 1];
         } else if (k - 1 < index) {
-            find_k_max(m, left, index - 1, k);
+            return find_k_max(m, left, index - 1, k);
         } else {
-            find_k_max(m, index + 1, right, k);
+            return find_k_max(m, index + 1, right, k);
         }
     }
 }
