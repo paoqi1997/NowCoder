@@ -474,6 +474,22 @@ vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
 }
 ```
 
+#### 7. [连续子数组的最大和](https://www.nowcoder.com/questionTerminal/459bd355da1549fa8a49e350bf3df484)
+
+动态规划。
+
+```cpp
+int FindGreatestSumOfSubArray(vector<int> array) {
+    int currVal = array[0];
+    int crest = array[0];
+    for (size_t i = 1; i < array.size(); ++i) {
+        currVal = max(currVal + array[i], array[i]);
+        crest = max(currVal, crest);
+    }
+    return crest;
+}
+```
+
 ### String
 
 #### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
