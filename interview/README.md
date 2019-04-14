@@ -458,7 +458,7 @@ int MoreThanHalfNum_Solution(vector<int> numbers) {
 ```cpp
 vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
     if (input.empty() || k <= 0 || k > input.size()) {
-         return vector<int>();
+        return vector<int>();
     } else {
         vector<int> box;
         priority_queue<int, vector<int>, greater<int>> q;
