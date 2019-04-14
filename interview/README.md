@@ -1102,3 +1102,22 @@ int NumberOf1Between1AndN_Solution(int n) {
     return cnt;
 }
 ```
+
+#### 4. [把数组排成最小的数](https://www.nowcoder.com/questionTerminal/8fecd3f8ba334add803bf2a06af1b993)
+
+略。
+
+```cpp
+string PrintMinNumber(vector<int> numbers) {
+    sort(numbers.begin(), numbers.end(), [](int x, int y){
+        string s1 = to_string(x) + to_string(y);
+        string s2 = to_string(y) + to_string(x);
+        return s1 < s2;
+    });
+    string s;
+    for (auto ele : numbers) {
+        s.append(to_string(ele));
+    }
+    return s;
+}
+```
