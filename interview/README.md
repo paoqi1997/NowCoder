@@ -444,6 +444,29 @@ int MoreThanHalfNum_Solution(vector<int> numbers) {
 }
 ```
 
+#### 6. [最小的K个数](https://www.nowcoder.com/questionTerminal/6a296eb82cf844ca8539b57c23e6e9bf)
+
+略。
+
+```cpp
+vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
+    if (input.empty() || k <= 0 || k > input.size()) {
+         return vector<int>();
+    } else {
+        vector<int> box;
+        priority_queue<int, vector<int>, greater<int>> q;
+        for (auto ele : input) {
+            q.push(ele);
+        }
+        while (k-- > 0) {
+            box.push_back(q.top());
+            q.pop();
+        }
+        return box;
+    }
+}
+```
+
 ### String
 
 #### 1. [替换空格](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)
