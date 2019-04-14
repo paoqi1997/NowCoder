@@ -260,15 +260,17 @@ int main() {
 int qs(int m[], int l, int r) {
     int tmpVal = m[l];
     while (l < r) {
-        while (l < r && m[l] < tmpVal) {
-            ++l;
-        }
-        while (l < r && m[r] > tmpVal) {
+        while (l < r && m[r] >= tmpVal) {
             --r;
         }
-        swap(m[l], m[r]);
+        m[l] = m[r];
+        while (l < r && m[l] <= tmpVal) {
+            ++l;
+        }
+        m[r] = m[l];
     }
-    return r;
+    m[l] = tmpVal;
+    return l;
 }
 void quicksort(int m[], int left, int right) {
     if (left < right) {
@@ -285,15 +287,17 @@ void quicksort(int m[], int left, int right) {
 int fkm(int m[], int l, int r) {
     int tmpVal = m[l];
     while (l < r) {
-        while (l < r && m[l] > tmpVal) {
-            ++l;
-        }
-        while (l < r && m[r] < tmpVal) {
+        while (l < r && m[r] <= tmpVal) {
             --r;
         }
-        swap(m[l], m[r]);
+        m[l] = m[r];
+        while (l < r && m[l] >= tmpVal) {
+            ++l;
+        }
+        m[r] = m[l];
     }
-    return r;
+    m[l] = tmpVal;
+    return l;
 }
 int find_k_max(int m[], int left, int right, int k) {
     if (left < right) {
