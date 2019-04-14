@@ -289,7 +289,8 @@ void quicksort(int m[], int left, int right) {
 
 ```cpp
 void fkm(int m[], int l, int r, int k) {
-    int i = l, j = r, tmpVal = m[l];
+    int i = l, j = r;
+    int tmpVal = m[i];
     while (i < j) {
         while (i < j && m[j] <= tmpVal) {
             --j;
