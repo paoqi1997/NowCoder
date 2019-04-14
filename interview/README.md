@@ -302,9 +302,9 @@ void fkm(int m[], int l, int r, int k) {
         m[j] = m[i];
     }
     m[i] = tmpVal;
-    if (k - 1 == i) {
+    if (i == k - 1) {
         return;
-    } else if (k - 1 < i) {
+    } else if (i > k - 1) {
         fkm(m, l, i - 1, k);
     } else {
         fkm(m, i + 1, r, k);
