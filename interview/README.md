@@ -1087,3 +1087,18 @@ double Power(double base, int exp) {
     return pow(base, exp);
 }
 ```
+
+#### 3. [整数中1出现的次数](https://www.nowcoder.com/questionTerminal/bd7f978302044eee894445e244c7eee6)
+
+略。
+
+```cpp
+int NumberOf1Between1AndN_Solution(int n) {
+    int cnt = 0;
+    for (int i = 1; i <= n; ++i) {
+        string s = to_string(i);
+        cnt += count(s.begin(), s.end(), '1');
+    }
+    return cnt;
+}
+```
