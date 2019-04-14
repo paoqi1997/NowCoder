@@ -288,32 +288,30 @@ void quicksort(int m[], int left, int right) {
 稍作修改即可利用快排思想找出数组中第k大的数。
 
 ```cpp
-int fkm(int m[], int l, int r) {
-    int tmpVal = m[l];
-    while (l < r) {
-        while (l < r && m[r] <= tmpVal) {
-            --r;
+void fkm(int m[], int l, int r, int k) {
+    int i = l, j = r, tmpVal = m[l];
+    while (i < j) {
+        while (i < j && m[j] <= tmpVal) {
+            --j;
         }
-        m[l] = m[r];
-        while (l < r && m[l] >= tmpVal) {
-            ++l;
+        m[i] = m[j];
+        while (i < j && m[i] >= tmpVal) {
+            ++i;
         }
-        m[r] = m[l];
+        m[j] = m[i];
     }
-    m[l] = tmpVal;
-    return l;
+    m[i] = tmpVal;
+    if (k - 1 == i) {
+        return;
+    } else if (k - 1 < i) {
+        fkm(m, l, i - 1, k);
+    } else {
+        fkm(m, i + 1, r, k);
+    }
 }
 int find_k_max(int m[], int left, int right, int k) {
-    if (left < right) {
-        int index = fkm(m, left, right);
-        if (k - 1 == index) {
-            return m[k - 1];
-        } else if (k - 1 < index) {
-            return find_k_max(m, left, index - 1, k);
-        } else {
-            return find_k_max(m, index + 1, right, k);
-        }
-    }
+    fkm(m, left, right, k);
+    return m[k - 1];
 }
 ```
 
