@@ -1121,3 +1121,26 @@ string PrintMinNumber(vector<int> numbers) {
     return s;
 }
 ```
+
+#### 5. [丑数](https://www.nowcoder.com/questionTerminal/6aa9e04fc3794f68acf8778237ba065b)
+
+略。
+
+```cpp
+int GetUglyNumber_Solution(int index) {
+    if (index < 7) {
+        return index;
+    } else {
+        vector<int> box(index);
+        box[0] = 1;
+        int i2 = 0, i3 = 0, i5 = 0;
+        for (int i = 1; i < index; ++i) {
+            box[i] = min(box[i2] * 2, min(box[i3] * 3, box[i5] * 5));
+            if (box[i] == box[i2] * 2) ++i2;
+            if (box[i] == box[i3] * 3) ++i3;
+            if (box[i] == box[i5] * 5) ++i5;
+        }
+        return box[index - 1];
+    }
+}
+```
