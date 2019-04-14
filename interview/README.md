@@ -556,6 +556,34 @@ vector<string> Permutation(string s) {
 }
 ```
 
+#### 3. [第一个只出现一次的字符](https://www.nowcoder.com/questionTerminal/1c82e8cf713b4bbeb2a5b31cf5b0417c)
+
+略。
+
+```cpp
+int FirstNotRepeatingChar(string s) {
+    map<char, pair<int, int>> dict;
+    for (size_t i = 0; i < s.length(); ++i) {
+        if (dict.find(s[i]) == dict.end()) {
+            dict[s[i]] = make_pair(i, 1);
+        } else {
+            ++dict[s[i]].second;
+        }
+    }
+    int index = INT_MAX;
+    for (auto ele : dict) {
+        if (ele.second.second == 1) {
+            index = min(index, ele.second.first);
+        }
+    }
+    if (index == INT_MAX) {
+        return -1;
+    } else {
+        return index;
+    }
+}
+```
+
 ### Linked List
 
 #### 1. [从尾到头打印链表](https://www.nowcoder.com/questionTerminal/d0267f7f55b3412ba93bd35cfa8e8035)
