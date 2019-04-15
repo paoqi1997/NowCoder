@@ -572,8 +572,9 @@ int FirstNotRepeatingChar(string s) {
     }
     int index = INT_MAX;
     for (auto ele : dict) {
-        if (ele.second.second == 1) {
-            index = min(index, ele.second.first);
+        auto kv = ele.second;
+        if (kv.second == 1) {
+            index = min(index, kv.first);
         }
     }
     if (index == INT_MAX) {
