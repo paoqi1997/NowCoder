@@ -743,3 +743,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 ||选择排序|快速排序|
 |---|---|---|
 |空间复杂度|O(1)|Unknown|
+
+[Question 3](https://www.nowcoder.com/questionTerminal/3cc2113101334adb90b8de62ed424ae7)
+
+在所有排序方法中，关键字的比较次数与序列的初始排列顺序无关的是选择排序。
