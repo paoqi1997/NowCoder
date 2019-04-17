@@ -747,3 +747,11 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 3](https://www.nowcoder.com/questionTerminal/3cc2113101334adb90b8de62ed424ae7)
 
 在所有排序方法中，关键字的比较次数与序列的初始排列顺序无关的是选择排序。
+
+[Question 4](https://www.nowcoder.com/questionTerminal/20eefa474e444f1b9799305362552d12)
+
+希尔排序的时间复杂度主要与增量序列有关。
+
+[Question 5](https://www.nowcoder.com/questionTerminal/ed59bd8036c944a985852fe5568d28d0)
+
+当n = 1时，相当于对m个数进行归并排序，其时间复杂度为O(mlogm)。由此可知，若不采用计数排序，合并m个长度为n的已排序数组的时间复杂度为O(mnlogm)。
