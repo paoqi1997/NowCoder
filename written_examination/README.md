@@ -774,4 +774,4 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 
 [Question 10](https://www.nowcoder.com/questionTerminal/abfee201491946c2bcd2c3474c668eb9)
 
-优先处理较短的部分，可减小快排的递归深度。
+分区后优先处理较短的部分，可减小快排的递归深度。
