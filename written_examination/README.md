@@ -771,3 +771,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 9](https://www.nowcoder.com/questionTerminal/77443c03fdb5430a974e87a4836d1aea)
 
 在n远大于k的情况下，可通过hash表压缩数据长度，对k个数进行排序，这k个数排完序后，剩下的数也就排好了。整个过程相当于遍历一次序列，其时间复杂度最小可为O(n)。
+
+[Question 10](https://www.nowcoder.com/questionTerminal/abfee201491946c2bcd2c3474c668eb9)
+
+优先处理较短的部分，可减小快排的递归深度。
