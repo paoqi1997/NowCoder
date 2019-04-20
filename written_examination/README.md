@@ -763,3 +763,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 7](https://www.nowcoder.com/questionTerminal/0bd215599cce467084ca0b7bd7932e74)
 
 在待排序数据基本有序的情况下，不应该选择快速排序，而应该选择一些简单的排序方法。
+
+[Question 8](https://www.nowcoder.com/questionTerminal/ea13e70111084fb6995e2fb404ec6790)
+
+在序列接近有序的情况下，快排的时间复杂度为O(n^2)，这种情况对快排来说是最坏的情况。
