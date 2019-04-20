@@ -759,3 +759,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 6](https://www.nowcoder.com/questionTerminal/a9b93bb3c120416380799043335bf63e)
 
 利用堆排序对一组数据进行降序排序时需要事先建立一个小根堆。
+
+[Question 7](https://www.nowcoder.com/questionTerminal/0bd215599cce467084ca0b7bd7932e74)
+
+在待排序数据基本有序的情况下，不应该选择快速排序，而应该选择一些简单的排序方法。
