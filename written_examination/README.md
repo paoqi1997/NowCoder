@@ -755,3 +755,7 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 5](https://www.nowcoder.com/questionTerminal/ed59bd8036c944a985852fe5568d28d0)
 
 当n = 1时，合并m个长度为1的已排序数组相当于对m个数进行归并排序，其时间复杂度为O(mlogm)。由此可知，若不采用计数排序，合并m个长度为n的已排序数组的时间复杂度为O(mnlogm)。
+
+[Question 6](https://www.nowcoder.com/questionTerminal/a9b93bb3c120416380799043335bf63e)
+
+利用堆排序对一组数据进行降序排序时需要事先建立一个小根堆。
