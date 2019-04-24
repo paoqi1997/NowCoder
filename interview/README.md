@@ -316,6 +316,19 @@ int find_k_max(int m[], int left, int right, int k) {
 }
 ```
 
+#### 6. 如何将一个数组循环右移k位？
+
+三次反转即可。
+
+```cpp
+void moveToKRight(int m[], int n, int k) {
+    k %= n;
+    std::reverse(m, m + n - k);     // [0, n - k)
+    std::reverse(m + n - k, m + n); // [n - k, n)
+    std::reverse(m, m + n);         // [0, n)
+}
+```
+
 ## Code
 
 ### Array
