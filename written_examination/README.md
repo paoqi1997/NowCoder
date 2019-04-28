@@ -775,3 +775,15 @@ P原语为阻塞原语，V原语为唤醒原语，执行V操作后，若信号�
 [Question 10](https://www.nowcoder.com/questionTerminal/abfee201491946c2bcd2c3474c668eb9)
 
 分区后优先处理较短的部分，可减小快排的递归深度。
+
+[Question 11](https://www.nowcoder.com/questionTerminal/dbcfd8092cef4526bce424f8db145ddb)
+
+归并排序属于稳定排序，其时间复杂度为O(nlogn)。
+
+[Question 12](https://www.nowcoder.com/questionTerminal/66cab742af0247489a88d12c60539d25)
+
+在序列基本有序的情况下，选择排序的时间复杂度近似于O(n^2)，插入排序的时间复杂度近似于O(n)，故插入排序的效率最高。
+
+[Question 13](https://www.nowcoder.com/questionTerminal/0f7330bdf86c42ce92782f158e426122)
+
+序列由顺序存储改为链式存储后，由于希尔排序及堆排序涉及到非相邻元素之间的交换，故其时间效率降低。
