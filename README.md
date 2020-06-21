@@ -2,10 +2,10 @@
 
 笔试及面试题目总结。
 
-## 1. [Written Examination](https://github.com/paoqi1997/NowCoder/tree/master/written_examination)
+## [Written Examination](https://github.com/paoqi1997/NowCoder/tree/master/written_examination)
 
-你也太菜了吧！
+笔试部分。
 
-## 2. [Interview](https://github.com/paoqi1997/NowCoder/tree/master/interview)
+## [Interview](https://github.com/paoqi1997/NowCoder/tree/master/interview)
 
-请回吧。
+面试部分。
